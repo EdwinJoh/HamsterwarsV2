@@ -19,6 +19,13 @@ namespace Repository
             .ToList();
         public Hamster GetHamster(int id, bool trackChanges) =>
             FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefault();
+
         public void CreateHamster(Hamster hamster) => Create(hamster);
+
+
+        public IEnumerable<Hamster> GetByIds(IEnumerable<int> ids, bool trackChanges) => // använd för att slumpa fram 2 hamstrar ?? random generation ??
+            FindByCondition(x => ids.Contains(x.Id), trackChanges).ToList();
+        
+        public void DeleteHamster(Hamster hamster) => Delete(hamster);
     }
 }

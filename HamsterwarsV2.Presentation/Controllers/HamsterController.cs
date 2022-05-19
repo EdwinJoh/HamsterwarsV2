@@ -18,7 +18,7 @@ namespace HamsterwarsV2.Presentation.Controllers
             var hamsters = _service.Hamster.GetAllHamsters(trackChanges: false);
             return Ok(hamsters);
         }
-        [HttpGet("{id:int}", Name ="HamsterById")]
+        [HttpGet("{id:int}", Name = "HamsterById")]
         public IActionResult GetHamster(int id)
         {
             var hamster = _service.Hamster.GetHamster(id, trackChanges: false);
@@ -33,6 +33,21 @@ namespace HamsterwarsV2.Presentation.Controllers
 
             var createdHamster = _service.Hamster.CreateHamster(hamster);
             return CreatedAtRoute("HamsterById", new { id = createdHamster.id }, createdHamster);
+        }
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteHamster(int id)
+        {
+            _service.Hamster.DeleteHamster(id,trackChanges:false);
+            return NoContent();
+        }
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster)
+        {
+            if (hamster is null)
+                return BadRequest("HamsterForUpdate object is null");
+
+            _service.Hamster.UpdateHamster(id,hamster,trackChanges:true);
+            return NoContent();
         }
     }
 }

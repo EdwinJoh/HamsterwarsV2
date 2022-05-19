@@ -52,5 +52,26 @@ namespace Service
 
             return hamsterToReturn;
         }
+
+       public void DeleteHamster(int id, bool trackChanges)
+        {
+            var hamster = _repository.Hamster.GetHamster(id, trackChanges);
+            if (hamster is null)
+                throw new HamsterNotFoundException(id);
+
+            _repository.Hamster.DeleteHamster(hamster);
+            _repository.Save();
+        }
+        public void UpdateHamster(int id,HamsterForUpdateDto hamsterForUpdate,bool trackChanges)
+        {
+            var hamsterEntity = _repository.Hamster.GetHamster(id, trackChanges);
+            if (hamsterEntity is null)
+                throw new HamsterNotFoundException(id);
+
+            _mapper.Map(hamsterForUpdate, hamsterEntity);
+            _repository.Save();
+        }
+        
+       
     }
 }

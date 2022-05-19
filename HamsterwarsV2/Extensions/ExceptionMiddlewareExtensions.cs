@@ -22,7 +22,8 @@ namespace HamsterwarsV2.Extensions
                         context.Response.StatusCode = contextFeature.Error switch
 {
                             NotFoundExceptions => StatusCodes.Status404NotFound,
-                            _ => StatusCodes.Status500InternalServerError
+                             BadRequestException => StatusCodes.Status400BadRequest,
+                             _ => StatusCodes.Status500InternalServerError
                         };
                         logger.LogError($"Something went wrong: {contextFeature.Error}");
                         await context.Response.WriteAsync(new ErrorDetails()

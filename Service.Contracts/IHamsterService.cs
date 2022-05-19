@@ -11,7 +11,10 @@ namespace Service.Contracts
     public interface IHamsterService
     {
         IEnumerable<HamsterDto> GetAllHamsters(bool trackChanges);
+               
         HamsterDto GetHamster(int id,bool trackChanges);
         HamsterDto CreateHamster(HamsterForCreationDto hamster);
+        void DeleteHamster(int id,bool trackChanges);
+        void UpdateHamster(int id, HamsterForUpdateDto hamster,bool trackChanges);
     }
 }
