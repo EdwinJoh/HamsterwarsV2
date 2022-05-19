@@ -14,12 +14,13 @@ namespace HamsterwarsV2.Mapper
         public MappingProfile()
         {
             
-            CreateMap<Matches, MatchDto>();
             CreateMap<Hamster, HamsterDto>();
             CreateMap<HamsterForCreationDto, Hamster>();
             CreateMap<HamsterForUpdateDto, Hamster>().ReverseMap();
 
             CreateMap<MatchForCreationDto, Matches>();
+            CreateMap<Matches, MatchDto>();
+
 
         }
     }

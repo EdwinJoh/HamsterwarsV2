@@ -1,5 +1,4 @@
 ﻿using HamsterwarsV2.Presentation.ActionFilters;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
