@@ -4,7 +4,7 @@
 
 namespace HamsterwarsV2.Migrations
 {
-    public partial class initialCreate : Migration
+    public partial class initcreating : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

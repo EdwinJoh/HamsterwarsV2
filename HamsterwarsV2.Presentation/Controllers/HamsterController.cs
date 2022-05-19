@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
+﻿using HamsterwarsV2.Presentation.ActionFilters;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 
 namespace HamsterwarsV2.Presentation.Controllers
 {
-    [Route("api/hamsters")]
+    [Route("hamsters")]
     [ApiController]
     public class HamsterController : ControllerBase
     {
@@ -13,10 +15,9 @@ namespace HamsterwarsV2.Presentation.Controllers
         public HamsterController(IServiceManager serviceManager) => _service = serviceManager;
 
         [HttpGet]
-        public async Task<IActionResult> GetHamsters()
+        public async Task<IActionResult> GetHamsters([FromQuery] HamsterParameters hamsterParameters)
         {
-
-            var hamsters = await _service.Hamster.GetAllHamstersAsync(trackChanges: false);
+            var hamsters = await _service.Hamster.GetAllHamstersAsync(hamsterParameters, trackChanges: false);
             return Ok(hamsters);
         }
         [HttpGet("{id:int}", Name = "HamsterById")]
@@ -27,12 +28,10 @@ namespace HamsterwarsV2.Presentation.Controllers
         }
 
         [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+
         public async Task<IActionResult> CreateHamster([FromBody] HamsterForCreationDto hamster)
         {
-            if (hamster is null)
-                return BadRequest("HamsterForCreation object is null");
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
 
             var createdHamster = await _service.Hamster.CreateHamsterAsync(hamster);
             return CreatedAtRoute("HamsterById", new { id = createdHamster.id }, createdHamster);
@@ -45,15 +44,17 @@ namespace HamsterwarsV2.Presentation.Controllers
             return NoContent();
         }
         [HttpPut("{id:int}")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster)
         {
-            if (hamster is null)
-                return BadRequest("HamsterForUpdate object is null");
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
-
-           await _service.Hamster.UpdateHamsterAsync(id, hamster, trackChanges: true);
+            await _service.Hamster.UpdateHamsterAsync(id, hamster, trackChanges: true);
             return NoContent();
+        }
+        [HttpGet("random")]
+        public async Task<IActionResult> GetRandomHamter()
+        {
+            var hamster = await _service.Hamster.GetRandomHamsterAsync(trackChanges: false);
+            return Ok(hamster);
         }
 
     }

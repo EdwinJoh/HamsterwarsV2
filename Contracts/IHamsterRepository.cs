@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace Contracts
 {
     public interface IHamsterRepository
     {
-        Task<IEnumerable<Hamster>> GetAllHamsters(bool trackChanges);
-        Task<IEnumerable<Hamster>> GetByIds(IEnumerable<int> ids, bool trackChanges); //TODO: Använd för att slumpa fram 2 olika hamstrar??
-        Task<Hamster> GetHamster(int id, bool trackChanges);
+        Task<IEnumerable<Hamster>> GetAllHamstersAsync(HamsterParameters hamsterParameters, bool trackChanges);       
+        Task<Hamster> GetHamsterAsync(int id, bool trackChanges);
         void CreateHamster(Hamster hamster);
         void DeleteHamster(Hamster hamster);
+        Task<Hamster> GetRandomHamster(int id, bool trackChanges);
     }
 }

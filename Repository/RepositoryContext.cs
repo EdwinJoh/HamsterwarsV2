@@ -17,8 +17,12 @@ namespace Repository
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             modelBuilder.ApplyConfiguration(new HamsterConfiguration());
+            modelBuilder.ApplyConfiguration(new MatchConfiguration());
+
         }
         public DbSet<Hamster> Hamsters { get; set; }
+        public DbSet<Matches> Matches { get; set; }
     }
 }

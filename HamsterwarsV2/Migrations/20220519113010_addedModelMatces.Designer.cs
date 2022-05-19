@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repository;
 
@@ -11,9 +12,10 @@ using Repository;
 namespace HamsterwarsV2.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20220519113010_addedModelMatces")]
+    partial class addedModelMatces
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -566,22 +568,6 @@ namespace HamsterwarsV2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Matches");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            LoserId = 2,
-                            Timestamp = new DateTime(2022, 5, 19, 14, 45, 53, 496, DateTimeKind.Local).AddTicks(1885),
-                            WinnerId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            LoserId = 4,
-                            Timestamp = new DateTime(2022, 5, 19, 14, 45, 53, 496, DateTimeKind.Local).AddTicks(1932),
-                            WinnerId = 2
-                        });
                 });
 #pragma warning restore 612, 618
         }

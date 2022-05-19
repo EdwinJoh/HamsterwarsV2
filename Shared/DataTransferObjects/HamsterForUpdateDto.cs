@@ -21,6 +21,9 @@ namespace Shared.DataTransferObjects
         public string? FavFood { get; set; }
         public string? Loves { get; set; }
         public string? ImgName { get; set; } = "hamster1.jpg";
+        public int Wins { get; set; }
+        public int Defeats { get; set; }
+        public int Games { get; set; }
     }
 
 }

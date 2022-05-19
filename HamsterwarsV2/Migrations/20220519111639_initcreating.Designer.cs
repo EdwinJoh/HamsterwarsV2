@@ -11,8 +11,8 @@ using Repository;
 namespace HamsterwarsV2.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20220518110051_initalData")]
-    partial class initalData
+    [Migration("20220519111639_initcreating")]
+    partial class initcreating
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,20 +63,6 @@ namespace HamsterwarsV2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Hamsters");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 2,
-                            Age = 2,
-                            Defeats = 1,
-                            FavFood = "Kottleter",
-                            Games = 2,
-                            ImgName = "hamster-1.jpg",
-                            Loves = "Inte mycket",
-                            Name = "Edwin",
-                            Wins = 1
-                        });
                 });
 #pragma warning restore 612, 618
         }
