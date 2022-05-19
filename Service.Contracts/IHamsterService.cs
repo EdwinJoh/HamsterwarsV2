@@ -10,11 +10,11 @@ namespace Service.Contracts
 {
     public interface IHamsterService
     {
-        IEnumerable<HamsterDto> GetAllHamsters(bool trackChanges);
-               
-        HamsterDto GetHamster(int id,bool trackChanges);
-        HamsterDto CreateHamster(HamsterForCreationDto hamster);
-        void DeleteHamster(int id,bool trackChanges);
-        void UpdateHamster(int id, HamsterForUpdateDto hamster,bool trackChanges);
+        Task<IEnumerable<HamsterDto>> GetAllHamstersAsync(bool trackChanges);
+        Task<HamsterDto> GetHamsterAsync(int id, bool trackChanges);
+        Task<HamsterDto> CreateHamsterAsync(HamsterForCreationDto hamster);
+        Task DeleteHamsterAsync(int id, bool trackChanges);
+        Task UpdateHamsterAsync(int id, HamsterForUpdateDto hamster, bool trackChanges);
+
     }
 }

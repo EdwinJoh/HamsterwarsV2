@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +14,18 @@ namespace Repository
         public HamsterRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
-        public IEnumerable<Hamster> GetAllHamsters(bool trackChanges) =>
-            FindAll(trackChanges)
+        public async Task<IEnumerable<Hamster>> GetAllHamsters(bool trackChanges) =>
+            await FindAll(trackChanges)
             .OrderBy(c => c.Name)
-            .ToList();
-        public Hamster GetHamster(int id, bool trackChanges) =>
-            FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefault();
+            .ToListAsync();
+        public async Task<Hamster> GetHamster(int id, bool trackChanges) =>
+            await FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
 
         public void CreateHamster(Hamster hamster) => Create(hamster);
 
 
-        public IEnumerable<Hamster> GetByIds(IEnumerable<int> ids, bool trackChanges) => // använd för att slumpa fram 2 hamstrar ?? random generation ??
-            FindByCondition(x => ids.Contains(x.Id), trackChanges).ToList();
+        public async Task< IEnumerable<Hamster>> GetByIds(IEnumerable<int> ids, bool trackChanges) => // använd för att slumpa fram 2 hamstrar ?? random generation ??
+           await FindByCondition(x => ids.Contains(x.Id), trackChanges).ToListAsync();
         
         public void DeleteHamster(Hamster hamster) => Delete(hamster);
     }

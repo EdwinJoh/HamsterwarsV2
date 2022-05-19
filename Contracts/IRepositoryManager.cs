@@ -9,6 +9,6 @@ namespace Contracts
     public interface IRepositoryManager
     {
         IHamsterRepository Hamster { get; }
-        void Save();
+        Task SaveAsync();
     }
 }

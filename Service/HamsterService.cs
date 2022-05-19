@@ -24,54 +24,54 @@ namespace Service
             _logger = logger;
             _mapper = mapper;
         }
-        public IEnumerable<HamsterDto> GetAllHamsters(bool trackChanges)
+        public async Task<IEnumerable<HamsterDto>> GetAllHamstersAsync(bool trackChanges)
         {
 
-            var hamsters = _repository.Hamster.GetAllHamsters(trackChanges);
+            var hamsters = await _repository.Hamster.GetAllHamsters(trackChanges);
             var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamsters);
             return hamsterDto;
 
         }
-        public HamsterDto GetHamster(int id,bool trackChanges)
+        public async Task<HamsterDto> GetHamsterAsync(int id, bool trackChanges)
         {
-            var hamster = _repository.Hamster.GetHamster(id, trackChanges);
+            var hamster = await _repository.Hamster.GetHamster(id, trackChanges);
             if (hamster is null)
                 throw new HamsterNotFoundException(id);
 
             var hamsterDto = _mapper.Map<HamsterDto>(hamster);
             return hamsterDto;
         }
-        public HamsterDto CreateHamster(HamsterForCreationDto hamster)
+        public async Task<HamsterDto> CreateHamsterAsync(HamsterForCreationDto hamster)
         {
             var hamsterEntity = _mapper.Map<Hamster>(hamster);
 
             _repository.Hamster.CreateHamster(hamsterEntity);
-            _repository.Save();
+            _repository.SaveAsync();
 
             var hamsterToReturn = _mapper.Map<HamsterDto>(hamsterEntity);
 
             return hamsterToReturn;
         }
 
-       public void DeleteHamster(int id, bool trackChanges)
+        public async Task DeleteHamsterAsync(int id, bool trackChanges)
         {
-            var hamster = _repository.Hamster.GetHamster(id, trackChanges);
+            var hamster =await  _repository.Hamster.GetHamster(id, trackChanges);
             if (hamster is null)
                 throw new HamsterNotFoundException(id);
 
             _repository.Hamster.DeleteHamster(hamster);
-            _repository.Save();
+            _repository.SaveAsync();
         }
-        public void UpdateHamster(int id,HamsterForUpdateDto hamsterForUpdate,bool trackChanges)
+        public async Task UpdateHamsterAsync(int id, HamsterForUpdateDto hamsterForUpdate, bool trackChanges)
         {
-            var hamsterEntity = _repository.Hamster.GetHamster(id, trackChanges);
+            var hamsterEntity = await _repository.Hamster.GetHamster(id, trackChanges);
             if (hamsterEntity is null)
                 throw new HamsterNotFoundException(id);
 
             _mapper.Map(hamsterForUpdate, hamsterEntity);
-            _repository.Save();
+            _repository.SaveAsync();
         }
-        
-       
+
+
     }
 }

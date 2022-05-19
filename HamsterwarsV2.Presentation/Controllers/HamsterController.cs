@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 
@@ -12,42 +13,48 @@ namespace HamsterwarsV2.Presentation.Controllers
         public HamsterController(IServiceManager serviceManager) => _service = serviceManager;
 
         [HttpGet]
-        public IActionResult GetHamsters()
+        public async Task<IActionResult> GetHamsters()
         {
 
-            var hamsters = _service.Hamster.GetAllHamsters(trackChanges: false);
+            var hamsters = await _service.Hamster.GetAllHamstersAsync(trackChanges: false);
             return Ok(hamsters);
         }
         [HttpGet("{id:int}", Name = "HamsterById")]
-        public IActionResult GetHamster(int id)
+        public async Task<IActionResult> GetHamster(int id)
         {
-            var hamster = _service.Hamster.GetHamster(id, trackChanges: false);
+            var hamster = await _service.Hamster.GetHamsterAsync(id, trackChanges: false);
             return Ok(hamster);
         }
 
         [HttpPost]
-        public IActionResult CreateHamster([FromBody] HamsterForCreationDto hamster)
+        public async Task<IActionResult> CreateHamster([FromBody] HamsterForCreationDto hamster)
         {
             if (hamster is null)
                 return BadRequest("HamsterForCreation object is null");
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
 
-            var createdHamster = _service.Hamster.CreateHamster(hamster);
+            var createdHamster = await _service.Hamster.CreateHamsterAsync(hamster);
             return CreatedAtRoute("HamsterById", new { id = createdHamster.id }, createdHamster);
         }
+
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteHamster(int id)
+        public async Task<IActionResult> DeleteHamster(int id)
         {
-            _service.Hamster.DeleteHamster(id,trackChanges:false);
+            await _service.Hamster.DeleteHamsterAsync(id, trackChanges: false);
             return NoContent();
         }
         [HttpPut("{id:int}")]
-        public IActionResult UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster)
+        public async Task<IActionResult> UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster)
         {
             if (hamster is null)
                 return BadRequest("HamsterForUpdate object is null");
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
 
-            _service.Hamster.UpdateHamster(id,hamster,trackChanges:true);
+           await _service.Hamster.UpdateHamsterAsync(id, hamster, trackChanges: true);
             return NoContent();
         }
+
     }
 }
