@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record MatchDto(int WinnerId,int LoserId,DateTime DateTime);
+    public record MatchDto(int Id,int WinnerId,int LoserId,DateTime Timestamp);
 }

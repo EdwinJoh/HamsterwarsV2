@@ -18,9 +18,9 @@ namespace HamsterwarsV2.Presentation.Controllers
         
 
         [HttpGet]
-        public async Task<IActionResult> GetMatches([FromQuery] MatchParameters matchParameters)
+        public async Task<IActionResult> GetMatches()
         {
-            var matches = await _service.Matches.GetAllMatchesAsync(matchParameters,trackChanges: false);
+            var matches = await _service.Matches.GetAllMatchesAsync(trackChanges: false);
             return Ok(matches);
         }
     }

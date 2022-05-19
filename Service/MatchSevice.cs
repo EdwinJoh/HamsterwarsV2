@@ -23,10 +23,10 @@ namespace Service
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<MatchDto>> GetAllMatchesAsync(MatchParameters matchParameters, bool trackChanges)
+        public async Task<IEnumerable<MatchDto>> GetAllMatchesAsync( bool trackChanges)
         {
 
-            var matches = await _repository.Matches.GetAllMatchesAsync(matchParameters,trackChanges);
+            var matches = await _repository.Matches.GetAllMatchesAsync(trackChanges);
             var matchDto = _mapper.Map<IEnumerable<MatchDto>>(matches);
             return matchDto;
 

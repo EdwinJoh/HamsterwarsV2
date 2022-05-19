@@ -15,11 +15,10 @@ namespace Repository
         public MatchRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
-        public async Task<IEnumerable<Matches>> GetAllMatchesAsync(MatchParameters matchParameters ,bool trackChanges) =>
+        public async Task<IEnumerable<Matches>> GetAllMatchesAsync(bool trackChanges) =>
             await FindAll(trackChanges)
             .OrderBy(c => c.Id)
-            .Skip((matchParameters.PageNumber - 1) * matchParameters.PageSize)
-            .Take(matchParameters.PageSize)
+            
             .ToListAsync();
 
 
