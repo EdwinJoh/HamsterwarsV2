@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contacts;
 using Contracts;
+using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
@@ -25,20 +26,31 @@ namespace Service
         }
         public IEnumerable<HamsterDto> GetAllHamsters(bool trackChanges)
         {
-            try
-            {
-                var hamsters = _repository.Hamster.GetAllHamsters(trackChanges);
-                var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamsters);
-                return hamsterDto;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Something went wrong in the {nameof(GetAllHamsters)} service method {ex}");
 
-                throw;
-            }
+            var hamsters = _repository.Hamster.GetAllHamsters(trackChanges);
+            var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamsters);
+            return hamsterDto;
+
         }
+        public HamsterDto GetHamster(int id,bool trackChanges)
+        {
+            var hamster = _repository.Hamster.GetHamster(id, trackChanges);
+            if (hamster is null)
+                throw new HamsterNotFoundException(id);
 
+            var hamsterDto = _mapper.Map<HamsterDto>(hamster);
+            return hamsterDto;
+        }
+        public HamsterDto CreateHamster(HamsterForCreationDto hamster)
+        {
+            var hamsterEntity = _mapper.Map<Hamster>(hamster);
 
+            _repository.Hamster.CreateHamster(hamsterEntity);
+            _repository.Save();
+
+            var hamsterToReturn = _mapper.Map<HamsterDto>(hamsterEntity);
+
+            return hamsterToReturn;
+        }
     }
 }

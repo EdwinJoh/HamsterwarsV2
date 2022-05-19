@@ -10,5 +10,7 @@ namespace Contracts
     public interface IHamsterRepository
     {
         IEnumerable<Hamster> GetAllHamsters(bool trackChanges);
+        Hamster GetHamster(int id, bool trackChanges);
+        void CreateHamster(Hamster hamster);
     }
 }

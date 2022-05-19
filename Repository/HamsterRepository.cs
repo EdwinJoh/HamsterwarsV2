@@ -17,5 +17,8 @@ namespace Repository
             FindAll(trackChanges)
             .OrderBy(c => c.Name)
             .ToList();
+        public Hamster GetHamster(int id, bool trackChanges) =>
+            FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefault();
+        public void CreateHamster(Hamster hamster) => Create(hamster);
     }
 }

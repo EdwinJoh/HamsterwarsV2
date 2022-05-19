@@ -14,6 +14,7 @@ namespace HamsterwarsV2.Mapper
         public MappingProfile()
         {
             CreateMap<Hamster, HamsterDto>();
+            CreateMap<HamsterForCreationDto, Hamster>();
                 
                
         }
