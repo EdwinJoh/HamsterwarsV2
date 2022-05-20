@@ -19,8 +19,8 @@ namespace HamsterwarsV2.Presentation.Controllers
             var matches = await _service.Matches.GetAllMatchesAsync(trackChanges: false);
             return Ok(matches);
         }
-        [HttpGet("{id:int}",Name ="MatchById")]
-        public async Task<IActionResult>GetMatch(int id)
+        [HttpGet("{id:int}", Name = "MatchById")]
+        public async Task<IActionResult> GetMatch(int id)
         {
             var match = await _service.Matches.GetMatchAsync(id, trackChanges: false);
             return Ok(match);
@@ -37,6 +37,25 @@ namespace HamsterwarsV2.Presentation.Controllers
         {
             await _service.Matches.DeleteMatchAsync(id, trackChanges: false);
             return NoContent();
+        }
+        [HttpGet("matchWinners{id:int}")]
+        public async Task<IActionResult> GetMatchWinner(int id)
+        {
+            var matchwinners = await _service.Matches.GetMatchWinnersAsync(id, trackChanges: false);
+            return Ok(matchwinners);
+        }
+        [HttpGet("winners")]
+        public async Task<IActionResult> GetTopFiveWinners()
+        {
+            var hamsters = await _service.Hamster.GetTopFiveWinnersAsync(trackChanges: false);
+            return Ok(hamsters);
+
+        }[HttpGet("losers")]
+        public async Task<IActionResult> GetTopFiveLosers()
+        {
+            var hamsters = await _service.Hamster.GetTopFiveLosersAsync(trackChanges: false);
+            return Ok(hamsters);
+
         }
     }
 }

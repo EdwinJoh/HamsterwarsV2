@@ -14,9 +14,9 @@ namespace HamsterwarsV2.Presentation.Controllers
         public HamsterController(IServiceManager serviceManager) => _service = serviceManager;
 
         [HttpGet]
-        public async Task<IActionResult> GetHamsters([FromQuery] HamsterParameters hamsterParameters)
+        public async Task<IActionResult> GetHamsters()
         {
-            var hamsters = await _service.Hamster.GetAllHamstersAsync(hamsterParameters, trackChanges: false);
+            var hamsters = await _service.Hamster.GetAllHamstersAsync( trackChanges: false);
             return Ok(hamsters);
         }
         [HttpGet("{id:int}", Name = "HamsterById")]
@@ -33,7 +33,7 @@ namespace HamsterwarsV2.Presentation.Controllers
         {
 
             var createdHamster = await _service.Hamster.CreateHamsterAsync(hamster);
-            return CreatedAtRoute("HamsterById", new { id = createdHamster.id }, createdHamster);
+            return CreatedAtRoute("HamsterById", new { id = createdHamster.Id }, createdHamster);
         }
 
         [HttpDelete("{id:int}")]

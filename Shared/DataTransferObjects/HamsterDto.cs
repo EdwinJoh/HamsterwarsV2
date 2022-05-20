@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-   public record HamsterDto(int id,string Name, int Age,string FavFood,string Loves,string ImgName,int Wins,int Defeats,int Games);
+   public record HamsterDto(int Id,string Name, int Age,string FavFood,string Loves,string ImgName,int Wins,int Defeats,int Games);
 }

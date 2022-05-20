@@ -20,10 +20,10 @@ namespace Service
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<HamsterDto>> GetAllHamstersAsync(HamsterParameters hamsterParameters, bool trackChanges)
+        public async Task<IEnumerable<HamsterDto>> GetAllHamstersAsync(bool trackChanges)
         {
 
-            var hamsters = await _repository.Hamster.GetAllHamstersAsync(hamsterParameters, trackChanges);
+            var hamsters = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
             var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamsters);
             return hamsterDto;
 
@@ -74,7 +74,20 @@ namespace Service
             return hamsterDto;
 
         }
-
+        public async Task<IEnumerable<HamsterDto>> GetTopFiveWinnersAsync(bool trackChanges)
+        {
+            var hamstersDb = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
+            var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamstersDb);
+            var TopFive = hamsterDto.OrderByDescending(w => w.Wins).Take(5).Where(h=> h.Games >1);          
+            return TopFive;
+        }
+        public async Task<IEnumerable<HamsterDto>> GetTopFiveLosersAsync(bool trackChanges)
+        {
+            var hamstersDb = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
+            var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamstersDb);
+            var TopFive = hamsterDto.OrderByDescending(w => w.Defeats).Take(5).Where(h => h.Games > 1);
+            return TopFive;
+        }
 
         private async Task CheckIfHamsterExsist(int id, bool trackChages)
         {

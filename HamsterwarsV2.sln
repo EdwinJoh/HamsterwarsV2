@@ -3,31 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamsterwarsV2", "HamsterwarsV2\HamsterwarsV2.csproj", "{FEEB2136-D675-4482-937B-F3DDADE76B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamsterwarsV2", "HamsterwarsV2\HamsterwarsV2.csproj", "{FEEB2136-D675-4482-937B-F3DDADE76B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{1249B242-B925-4DA8-8885-999CF8D33027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{1249B242-B925-4DA8-8885-999CF8D33027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{7018BE0F-86F3-48B1-8540-BE3DA507229E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{7018BE0F-86F3-48B1-8540-BE3DA507229E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{36265CF1-C9EF-4AE9-A3F2-B2E27E8D30B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{36265CF1-C9EF-4AE9-A3F2-B2E27E8D30B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{CFB990F1-FB27-4863-AB27-F849653C175E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{CFB990F1-FB27-4863-AB27-F849653C175E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{EE0E1764-1669-4237-A0F5-6051CBC99236}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A5F48EF6-CFD9-41F6-B334-41D2331BCBED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{66D65B59-E84E-4BEB-8AAF-123878B9C2CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{66D65B59-E84E-4BEB-8AAF-123878B9C2CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{8B92F9C2-91E5-4DE1-849A-B5845A4033E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{EBDF09AC-8293-4E20-A8F3-317BB718EC36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{EBDF09AC-8293-4E20-A8F3-317BB718EC36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{97996E13-7C58-467B-8ACC-3148E5F19618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{97996E13-7C58-467B-8ACC-3148E5F19618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamsterwarsV2.Presentation", "HamsterwarsV2.Presentation\HamsterwarsV2.Presentation.csproj", "{32ACCA15-C32D-4C1E-96E4-A52BBFB62ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamsterwarsV2.Presentation", "HamsterwarsV2.Presentation\HamsterwarsV2.Presentation.csproj", "{32ACCA15-C32D-4C1E-96E4-A52BBFB62ECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{12061BDD-C662-45C6-B7EE-56BDAFD10C70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{12061BDD-C662-45C6-B7EE-56BDAFD10C70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{800508C2-8936-4A64-A361-B8511244C1E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamsterwarsV2.Ui", "HamsterwarsV2.Ui\HamsterwarsV2.Ui.csproj", "{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,10 @@ Global
 		{12061BDD-C662-45C6-B7EE-56BDAFD10C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12061BDD-C662-45C6-B7EE-56BDAFD10C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12061BDD-C662-45C6-B7EE-56BDAFD10C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +93,7 @@ Global
 		{97996E13-7C58-467B-8ACC-3148E5F19618} = {8B92F9C2-91E5-4DE1-849A-B5845A4033E6}
 		{32ACCA15-C32D-4C1E-96E4-A52BBFB62ECB} = {66D65B59-E84E-4BEB-8AAF-123878B9C2CC}
 		{12061BDD-C662-45C6-B7EE-56BDAFD10C70} = {8B92F9C2-91E5-4DE1-849A-B5845A4033E6}
+		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1} = {800508C2-8936-4A64-A361-B8511244C1E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CB85546-2A34-4C69-AB3E-421954BF693D}

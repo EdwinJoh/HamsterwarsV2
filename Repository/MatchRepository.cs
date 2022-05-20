@@ -24,7 +24,11 @@ namespace Repository
 
         public async Task<Matches> GetMatchAsync(int id, bool trackChanges) =>
             await FindByCondition(m => m.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
+
+        public async Task<IEnumerable<Matches>> GetMatchWinnersAsync(int id, bool trackChanges) =>
+            await FindByCondition(m => m.WinnerId == id, trackChanges).ToListAsync();
         
+
         public void CreateMatch(Matches match) => Create(match);
         public void DeleteMatch(Matches match) => Delete(match);
     }

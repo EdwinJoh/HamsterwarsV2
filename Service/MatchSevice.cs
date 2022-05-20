@@ -64,5 +64,13 @@ namespace Service
             _repository.Matches.DeleteMatch(matchDb);
             await _repository.SaveAsync();
         }
+        public async Task<IEnumerable<MatchDto>> GetMatchWinnersAsync(int id, bool trackChanges)
+        {
+            await CheckIfMatchExsist(id, trackChanges);
+            var matchesDb = await _repository.Matches.GetMatchWinnersAsync(id, trackChanges);
+            var matchDto = _mapper.Map < IEnumerable<MatchDto>>(matchesDb);
+
+            return matchDto;
+        }
     }
 }

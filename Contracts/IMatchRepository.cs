@@ -14,5 +14,8 @@ namespace Contracts
         Task<Matches> GetMatchAsync(int id,bool trackChanges);
         void CreateMatch(Matches match);
         void DeleteMatch(Matches match);
+        Task<IEnumerable<Matches>>GetMatchWinnersAsync(int id,bool trackChanges);
+        
+        
     }
 }
