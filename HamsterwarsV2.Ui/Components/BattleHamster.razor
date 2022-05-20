@@ -1,15 +1,22 @@
-﻿<h3>BattleHamster</h3>
+﻿
+@inject IRequestService _service
+<a href="" @onclick="() => Voted(Competitor, Competitor.Id)"><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
+<div class="infoBox" >
 
-<img class="img-thumbnail" src="/Content/@Competitor.ImgName">
-<p class="text-center">@Competitor.Name</p>
-<p class="text-left">Age:&nbsp;@Competitor.Age</p>
-<p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
-<p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+    <h1 class="text-center">@Competitor.Name</h1>
+    <p class="text-left">Age:&nbsp;@Competitor.Age</p>
+    <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
+    <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+</div>
 
 
 
 @code {
     [Parameter]
     public Hamster Competitor { get; set; }
+    public async Task Voted(Hamster hamsters,int winnerId)
+    {
+        await _service.VotedHamsterAsync(hamsters,winnerId);
+    }
 
 }

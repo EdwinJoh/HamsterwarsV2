@@ -30,5 +30,10 @@ namespace HamsterwarsV2.Ui.Services
             var respons = await _httpClient.GetFromJsonAsync<Hamster>("hamster/random");
             return respons!;
         }
+        public async Task VotedHamsterAsync(Hamster hamster, int id)
+        {
+            await _httpClient.PostAsJsonAsync($"hamster/id",new { hamster, id });
+            
+        }
     }
 }

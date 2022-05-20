@@ -74,9 +74,18 @@ a, .btn-link {
     clear: both;
     display: table;
 }
+
 .vertical-center {
     margin: 0;
     position: absolute;
     top: 50%;
+    margin-left:10%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    display:flex;
+}
+.infoBox{
+    background-color: white;
+    text-align:center
+
+}
