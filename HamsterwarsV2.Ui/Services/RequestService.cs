@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
+using System.Text.Json.Serialization;
+
 using System.Threading.Tasks;
 
 namespace HamsterwarsV2.Ui.Services
 {
-    public class RequestService :IRequestService
+    public class RequestService : IRequestService
     {
         private readonly HttpClient _httpClient;
 
@@ -21,7 +23,7 @@ namespace HamsterwarsV2.Ui.Services
             var response = await _httpClient.GetFromJsonAsync<IEnumerable<Hamster>>("hamster");
             return response!;
         }
-        public async Task RemoveObjectAsync<T>(string objType,int id)
+        public async Task RemoveObjectAsync<T>(string objType, int id)
         {
             await _httpClient.DeleteAsync($"{objType}/delete/{id}");
         }
@@ -30,10 +32,10 @@ namespace HamsterwarsV2.Ui.Services
             var respons = await _httpClient.GetFromJsonAsync<Hamster>("hamster/random");
             return respons!;
         }
-        public async Task VotedHamsterAsync(Hamster hamster, int id)
+        public async Task VotedHamsterAsync(int id,Hamster hamster)
         {
-            await _httpClient.PostAsJsonAsync($"hamster/id",new { hamster, id });
-            
+            await _httpClient.PutAsJsonAsync($"/hamster/update/{id}",hamster);
+
         }
     }
 }

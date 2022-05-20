@@ -42,7 +42,7 @@ namespace HamsterwarsV2.Presentation.Controllers
             await _service.Hamster.DeleteHamsterAsync(id, trackChanges: false);
             return NoContent();
         }
-        [HttpPut("{id:int}")]
+        [HttpPut("update/{id:int}")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> UpdateHamster(int id, [FromBody] HamsterForUpdateDto hamster)
         {

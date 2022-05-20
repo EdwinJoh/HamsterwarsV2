@@ -1,12 +1,17 @@
 ﻿
 @inject IRequestService _service
-<a href="" @onclick="() => Voted(Competitor, Competitor.Id)"><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
+<a @onclick="() => Voted(Competitor, Competitor.Id)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
+@if(Competitor is null)
+{
+    <p>loading</p>
+}
 <div class="infoBox" >
 
-    <h1 class="text-center">@Competitor.Name</h1>
+    <h1 class="text-left">@Competitor.Name</h1> @*TODO: får felmeddelande att den är null? *@
     <p class="text-left">Age:&nbsp;@Competitor.Age</p>
     <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
     <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+    @*<button type="button" @onclick="(() => Voted(Competitor, Competitor.Id))" class="btn btn-danger">REMOVE</button>*@
 </div>
 
 
@@ -16,7 +21,9 @@
     public Hamster Competitor { get; set; }
     public async Task Voted(Hamster hamsters,int winnerId)
     {
-        await _service.VotedHamsterAsync(hamsters,winnerId);
+        hamsters.Wins++;
+        hamsters.Games++;
+        await _service.VotedHamsterAsync(winnerId,hamsters);
     }
 
 }
