@@ -33,7 +33,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-2.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -44,7 +44,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-3.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -56,7 +56,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-4.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -67,7 +67,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-5.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -78,7 +78,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-6.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -89,7 +89,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-7.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -100,7 +100,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-8.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -111,7 +111,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-9.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -122,7 +122,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-10.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -133,7 +133,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-11.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -144,7 +144,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-12.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -155,7 +155,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-13.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -166,7 +166,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-14.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -177,7 +177,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-15.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -188,7 +188,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-16.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -199,7 +199,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-17.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -210,7 +210,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-18.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -221,7 +221,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-19.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -232,7 +232,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-20.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -243,7 +243,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-21.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -254,7 +254,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-22.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -265,7 +265,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-23.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -276,7 +276,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-24.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -287,7 +287,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-25.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -298,7 +298,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-26.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -309,7 +309,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-27.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -320,7 +320,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-28.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -331,7 +331,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-29.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -342,7 +342,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-30.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -353,7 +353,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-31.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -364,7 +364,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-32.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -375,7 +375,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-33.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -386,7 +386,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-34.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -397,7 +397,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-35.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -408,7 +408,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-36.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -419,7 +419,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-37.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -430,7 +430,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-38.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -441,7 +441,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-39.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0
@@ -452,7 +452,7 @@ namespace Repository.Configuration
                     Age = 2,
                     FavFood = "Kottleter",
                     Loves = "Inte mycket",
-                    ImgName = "hamster-1.jpg",
+                    ImgName = "hamster-40.jpg",
                     Wins = 0,
                     Defeats = 0,
                     Games = 0

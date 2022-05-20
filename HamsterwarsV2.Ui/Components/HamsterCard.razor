@@ -1,0 +1,28 @@
+﻿@inject IRequestService _service
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="Content/@hamster.ImgName" alt="Avatar" width="100%">
+        </div>
+        <div class="flip-card-back">
+            <h1>Name: <a href="/HamsterWins/@hamster.Id">@hamster.Name</a></h1>
+            <p>Favourite Food: @hamster.FavFood</p>
+            <p>Favourite Activity: @hamster.Loves</p>
+            <p>Wins: @hamster.Wins</p>
+            <p>Defeats: @hamster.Defeats</p>
+            <p>Games: @hamster.Games</p>
+            
+            <button type="button" @onclick="(() => RemoveHamster(hamster))" class="btn btn-danger">REMOVE</button>
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public Hamster hamster { get; set; }
+
+    public async Task RemoveHamster(Hamster hamster)
+    {
+        await _service.RemoveObjectAsync<Hamster>("hamster", hamster.Id);
+    }
+}

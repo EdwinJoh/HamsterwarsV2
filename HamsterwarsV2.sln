@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{800508C2-8936-4A64-A361-B8511244C1E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamsterwarsV2.Ui", "HamsterwarsV2.Ui\HamsterwarsV2.Ui.csproj", "{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamsterwarsV2.Ui", "HamsterwarsV2.Ui\HamsterwarsV2.Ui.csproj", "{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

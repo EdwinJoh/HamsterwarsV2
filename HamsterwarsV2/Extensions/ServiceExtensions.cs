@@ -15,6 +15,7 @@ namespace HamsterwarsV2.Extensions
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 builder.AllowAnyOrigin()
+                .WithOrigins("https://localhost:7012", "https://localhost:5000")
                 .AllowAnyMethod()
                .AllowAnyHeader());
             });

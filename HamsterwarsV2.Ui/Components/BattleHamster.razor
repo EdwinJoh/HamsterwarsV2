@@ -1,0 +1,15 @@
+﻿<h3>BattleHamster</h3>
+
+<img class="img-thumbnail" src="/Content/@Competitor.ImgName">
+<p class="text-center">@Competitor.Name</p>
+<p class="text-left">Age:&nbsp;@Competitor.Age</p>
+<p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
+<p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+
+
+
+@code {
+    [Parameter]
+    public Hamster Competitor { get; set; }
+
+}

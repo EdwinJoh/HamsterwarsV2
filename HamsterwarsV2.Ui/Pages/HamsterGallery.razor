@@ -1,0 +1,29 @@
+﻿@inject IRequestService _service
+@inject NavigationManager _nav
+@page "/gallery"
+
+
+<h3>HamsterGallery</h3>
+<h4>Our Hamsters</h4>
+@if (Hamsters is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        @foreach (var hamster in Hamsters)
+        {
+            <HamsterCard hamster="hamster" />
+        }
+    </div>
+}
+
+@code {
+
+    private IEnumerable<Hamster> Hamsters { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        Hamsters = await _service.GetAllHamstersAsync();
+    }
+}

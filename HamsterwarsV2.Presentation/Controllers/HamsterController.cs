@@ -6,7 +6,7 @@ using Shared.RequestFeatures;
 
 namespace HamsterwarsV2.Presentation.Controllers
 {
-    [Route("hamsters")]
+    [Route("hamster")]
     [ApiController]
     public class HamsterController : ControllerBase
     {
@@ -35,8 +35,8 @@ namespace HamsterwarsV2.Presentation.Controllers
             var createdHamster = await _service.Hamster.CreateHamsterAsync(hamster);
             return CreatedAtRoute("HamsterById", new { id = createdHamster.Id }, createdHamster);
         }
-
-        [HttpDelete("{id:int}")]
+        
+        [HttpDelete("delete/{id:int}")]
         public async Task<IActionResult> DeleteHamster(int id)
         {
             await _service.Hamster.DeleteHamsterAsync(id, trackChanges: false);
@@ -50,7 +50,7 @@ namespace HamsterwarsV2.Presentation.Controllers
             return NoContent();
         }
         [HttpGet("random")]
-        public async Task<IActionResult> GetRandomHamter()
+        public async Task<IActionResult> GetRandomHamster()
         {
             var hamster = await _service.Hamster.GetRandomHamsterAsync(trackChanges: false);
             return Ok(hamster);
