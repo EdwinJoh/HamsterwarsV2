@@ -1,29 +1,39 @@
-﻿
-@inject IRequestService _service
-<a @onclick="() => Voted(Competitor, Competitor.Id)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
-@if(Competitor is null)
+﻿@inject IRequestService _service
+
+<a @onclick="() => Voted(Competitor,Opponent)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
+@if (Competitor is null)
 {
     <p>loading</p>
 }
-<div class="infoBox" >
+else
+{
+    <div class="infoBox">
 
-    <h1 class="text-left">@Competitor.Name</h1> @*TODO: får felmeddelande att den är null? *@
-    <p class="text-left">Age:&nbsp;@Competitor.Age</p>
-    <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
-    <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
-    @*<button type="button" @onclick="(() => Voted(Competitor, Competitor.Id))" class="btn btn-danger">REMOVE</button>*@
-</div>
+        <h1 class="text-left">@Competitor.Name</h1> @*TODO: får felmeddelande att den är null? *@
+        <p class="text-left">Age:&nbsp;@Competitor.Age</p>
+        <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
+        <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+    </div>
+
+}
 
 
 
 @code {
     [Parameter]
-    public Hamster Competitor { get; set; }
-    public async Task Voted(Hamster hamsters,int winnerId)
+    public Hamster? Competitor { get; set; }
+    [Parameter]
+    public Hamster? Opponent { get; set; }
+
+    public async Task Voted(Hamster Winner, Hamster Loser)
     {
-        hamsters.Wins++;
-        hamsters.Games++;
-        await _service.VotedHamsterAsync(winnerId,hamsters);
+        Winner.Wins++;
+        Winner.Games++;
+        await _service.VotedHamsterAsync(Winner.Id, Winner);
+        Loser.Defeats++;
+        Loser.Games++;
+        await _service.VotedHamsterAsync(Loser.Id, Loser);
+
     }
 
 }

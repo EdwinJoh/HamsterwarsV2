@@ -13,5 +13,7 @@ namespace HamsterwarsV2.Ui.Services
         Task RemoveObjectAsync<T>(string objType, int id);
         Task<Hamster> GetRandomHamsterAsync();
         Task VotedHamsterAsync(int id,Hamster hamster);
+        Task<IEnumerable<Hamster>> GetWinnersAsync();
+        Task<IEnumerable<Hamster>> GetLosersAsync();
     }
 }
