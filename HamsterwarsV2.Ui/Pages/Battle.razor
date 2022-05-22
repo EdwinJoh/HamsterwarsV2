@@ -8,25 +8,20 @@
     <p>loading</p>
 }
 <div class="row">
-    <div class="column" style="float:left">
-        <div style="float:left">
 
-             <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo"/>
-            
-        </div>
-    </div>
+
+    <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo"></BattleHamster>
+
     <div class=" column justify-content-center text-center">
         <div class="vertical-center">
             <h2> VS </h2>
         </div>
-    </div>
-    <div class="column" style="float: right">
-        <div style="float: right;">
 
-            <BattleHamster Competitor="@CompetitorTwo" Opponent="@CompetitorOne" />
 
-        </div>
+
     </div>
+        <BattleHamster Competitor="@CompetitorTwo" Opponent="@CompetitorOne"></BattleHamster>
+
 
 </div>
 
@@ -44,10 +39,5 @@
             CompetitorTwo = await _service.GetRandomHamsterAsync();
         }
     }
-    public async Task Voted(Hamster hamsters,int winnerId)
-    {
-        hamsters.Wins++;
-        hamsters.Games++;
-        await _service.VotedHamsterAsync(winnerId,hamsters);
+  
     }
-}

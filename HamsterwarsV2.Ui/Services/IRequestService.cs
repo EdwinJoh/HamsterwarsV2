@@ -10,8 +10,10 @@ namespace HamsterwarsV2.Ui.Services
     public interface IRequestService
     {
         Task<IEnumerable<Hamster>> GetAllHamstersAsync();
+        Task<IEnumerable<Matches>> GetAllMatchesAsync();
         Task RemoveObjectAsync<T>(string objType, int id);
         Task<Hamster> GetRandomHamsterAsync();
+        Hamster GetMatchHamster(int id,IEnumerable<Hamster> hamsters);
         Task VotedHamsterAsync(int id,Hamster hamster);
         Task<IEnumerable<Hamster>> GetWinnersAsync();
         Task<IEnumerable<Hamster>> GetLosersAsync();

@@ -1,0 +1,70 @@
+﻿@inject IRequestService _service
+@page "/history"
+<h3>History</h3>
+
+@if (Hamsters is null || Matches is null)
+{
+    <p>Loading</p>
+}
+else
+{
+
+
+    <button type="button" @onclick="RemoveAll" class="btn btn-danger float-end">Remove all</button>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Game</th>
+                <th scope="col">Winning Hamster</th>
+                <th scope="col">Losing Hamster</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in Matches)
+            {
+                GetMatch(result.WinnerId, result.LoserId);
+
+                <tr>
+                    <th scope="row">@result.Id</th>
+                    <td>@Winner.Name</td>
+                    <td>@Loser.Name</td>
+                    <td><button type="button" @onclick="(() => RemoveOneMatch(result))" class="btn btn-danger">Remove Match</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        Hamsters = await _service.GetAllHamstersAsync();
+        Matches = await _service.GetAllMatchesAsync();
+    }
+    public IEnumerable<Hamster>? Hamsters { get; set; }
+    public IEnumerable<Matches>? Matches { get; set; }
+
+
+    public Hamster? Winner { get; set; }
+    public Hamster? Loser { get; set; }
+
+    private void GetMatch(int winnerId, int loserId)
+    {
+        Winner = _service.GetMatchHamster(winnerId, Hamsters);
+        Loser = _service.GetMatchHamster(loserId, Hamsters);
+    }
+   
+    private void RemoveOneMatch(Matches match)
+    {
+        
+    }
+
+
+    private void RemoveAll()
+    {
+
+    }
+
+
+}

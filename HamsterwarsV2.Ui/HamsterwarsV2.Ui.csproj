@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="Components\HamsterCard.razor.css" />
+    <None Remove="Pages\Statistic.razor.css" />
   </ItemGroup>
 
   <ItemGroup>

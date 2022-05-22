@@ -1,0 +1,34 @@
+﻿@inject IRequestService _ser
+@if(One is null || two is null)
+{
+    <p> loading</p>
+}
+<tbody>
+   
+
+        <tr>
+            
+            <td>@One.Name</td>
+            <td>@two.Name</td>
+            @*<td><button type="button" @onclick="(() => RemoveOneResult(result))" class="btn btn-danger">Remove Match</button></td>*@
+        </tr>
+ 
+</tbody>
+@code {
+    [Parameter]
+    public int Winnerid { get; set; }
+    [Parameter]
+    public int LoserId { get; set; }
+    public Hamster One { get; set; }
+    public Hamster two { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+       
+
+    }
+
+
+
+
+}

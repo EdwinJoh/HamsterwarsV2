@@ -3,27 +3,26 @@
         border-radius: 50%;
     }
 </style>
-
 <div class="col-lg-6 mb-5">
     <div class="card h-100">
         <div class="card-header">
-            <h4 class="label">@Heading</h4>
+            <h4 class="label">@Header</h4>
         </div>
         <div class="card-body">
             <Table Id="hoverableTable" Class="table-hover" Tooltip>
                 <tr hidden>
-                    <th style="width: 40px;" class="image"></th>
+                    <th style="width: 25px;" class="image">Image</th>
                     <th>Name</th>
                     <th>Wins</th>
-                    <th>Games</th>
+                    <th>Gamse</th>
                 </tr>
-                @foreach (var data in Winners)
+                @foreach (var data in hamsters)
                 {
                     <tr hidden>
                         <td class="image">
-                            <div class="img">
-                                <img style="width: 90px; height: 90px;" src="Content/@data.ImgName" />
-                            </div>
+
+                            <img style="width: 90px; height: 90px;" src="/Content/@data.ImgName" />
+
                         </td>
                         <td>@data.Name</td>
                         <td>@data.Wins</td>
@@ -34,11 +33,14 @@
         </div>
     </div>
 </div>
-@code{
+
+
+@code {
     [Parameter]
-    public IEnumerable<Hamster> Winners{ get; set; }
+    public IEnumerable<Hamster> hamsters { get; set; }
     [Parameter]
-    public string Heading { get; set; }
+    public string Header { get; set; }
+
 }
 
 

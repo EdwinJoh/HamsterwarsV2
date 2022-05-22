@@ -41,10 +41,27 @@ namespace HamsterwarsV2.Ui.Services
         {
             var respons = await _httpClient.GetFromJsonAsync<IEnumerable<Hamster>>("matches/winners");
             return respons!.OrderByDescending(w => w.Wins);
-        } public async Task<IEnumerable<Hamster>> GetLosersAsync()
+        }
+        public async Task<IEnumerable<Hamster>> GetLosersAsync()
         {
             var respons = await _httpClient.GetFromJsonAsync<IEnumerable<Hamster>>("matches/losers");
             return respons!.OrderByDescending(d => d.Defeats);
+        }
+        public async Task<IEnumerable<Matches>> GetAllMatchesAsync()
+        {
+            var respons = await _httpClient.GetFromJsonAsync<IEnumerable<Matches>>("matches");
+            return respons!;
+        }
+        public Hamster GetMatchHamster(int id, IEnumerable<Hamster> hamsters)
+        {
+            if (hamsters.Any(i => i.Id == id))
+            {
+                return hamsters.Where(s => s.Id == id).Single();
+            }
+            else
+            {
+                return new Hamster { Name = "Removed" };
+            }
         }
     }
 }

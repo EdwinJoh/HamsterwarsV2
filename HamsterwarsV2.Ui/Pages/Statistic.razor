@@ -1,28 +1,30 @@
 ﻿@page "/statistic"
 @inject IRequestService _service
 
-@if (HamstersTopWinners is null)
+@if (HamstersTopWinners is null|| HamstersTopLosers is null)
 {
     <p>loading</p>
 }
 else
 {
-    <StatisticCard Heading="Top 5 Winners" Winners="@HamstersTopWinners"></StatisticCard>
-    <StatisticCard Heading="Top 5 Winners" Winners="@HamstersTopLosers"></StatisticCard>
+    <div class="row">
 
+        <StatisticCard Header="Top Winners" hamsters="@HamstersTopWinners"></StatisticCard>
+
+        <StatisticCard Header="Top Loser" hamsters="@HamstersTopLosers"></StatisticCard>
+
+    </div>
 }
-
-
 
 @code {
 
-    public IEnumerable<Hamster> HamstersTopWinners { get; set; }
-    public IEnumerable<Hamster> HamstersTopLosers { get; set; }
+    public IEnumerable<Hamster>? HamstersTopWinners { get; set; }
+    public IEnumerable<Hamster>? HamstersTopLosers { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         HamstersTopWinners = await _service.GetWinnersAsync();
         HamstersTopLosers = await _service.GetLosersAsync();
     }
-    //TODO: Drop Table funktion ?
+    
     }
