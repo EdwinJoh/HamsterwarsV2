@@ -5,20 +5,18 @@
 
 <div class="column">
 
-
-    @*<a @onclick="() => Voted(Competitor,Opponent)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>*@
-    <input type="image" @onclick="(() => Voted(Competitor, Opponent))" src="/Images/@Competitor.ImgName" style="width:600px;height:400px;">
-
-
-    <div class="infoBox">
-
-        <h1 class="text-left">@Competitor.Name</h1>
-        <p class="text-left">Age:&nbsp;@Competitor.Age</p>
-        <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
-        <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
+    <div class="polaroid">
+        
+        <a @onclick="() => Voted(Competitor,Opponent)" href="https://localhost:7012/battle"><img src="/Content/@Competitor.ImgName" alt="@Competitor.Name" style="width:100%" ></a>
+        <div class="container" >
+            <h1>@Competitor.Name</h1>
+            <h3>@Competitor.Age</h3>
+            <h3>@Competitor.Loves</h3>
+        </div>
     </div>
-
+       
 </div>
+
 
 
 

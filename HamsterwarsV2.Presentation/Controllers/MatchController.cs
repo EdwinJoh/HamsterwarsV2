@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 
 namespace HamsterwarsV2.Presentation.Controllers
 {
@@ -14,7 +15,7 @@ namespace HamsterwarsV2.Presentation.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetMatches()
+        public async Task<IActionResult> GetMatches(MatchParameters parameters)
         {
             var matches = await _service.Matches.GetAllMatchesAsync(trackChanges: false);
             return Ok(matches);

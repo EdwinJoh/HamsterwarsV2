@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Components\BattleHamster.razor.css" />
     <None Remove="Components\HamsterCard.razor.css" />
     <None Remove="Pages\Statistic.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Components\BattleHamster.razor.css" />
     <Content Include="Components\HamsterCard.razor.css" />
   </ItemGroup>
 
