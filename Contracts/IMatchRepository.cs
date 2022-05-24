@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IMatchRepository
     {
-        Task<IEnumerable<Matches>> GetAllMatchesAsync(MatchParameters parameters ,bool trackChanges);
+        Task<IEnumerable<Matches>> GetAllMatchesAsync(bool trackChanges);
         Task<Matches> GetMatchAsync(int id,bool trackChanges);
         void CreateMatch(Matches match);
         void DeleteMatch(Matches match);

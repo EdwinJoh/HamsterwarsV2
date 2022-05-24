@@ -15,11 +15,10 @@ namespace Repository
         public MatchRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
-        public async Task<IEnumerable<Matches>> GetAllMatchesAsync(bool trackChanges) =>
+        public async Task<IEnumerable<Matches>> GetAllMatchesAsync( bool trackChanges) =>
             await FindAll(trackChanges)
             .OrderBy(c => c.Id)
-            
-            .ToListAsync();
+                        .ToListAsync();
 
 
         public async Task<Matches> GetMatchAsync(int id, bool trackChanges) =>
@@ -27,7 +26,7 @@ namespace Repository
 
         public async Task<IEnumerable<Matches>> GetMatchWinnersAsync(int id, bool trackChanges) =>
             await FindByCondition(m => m.WinnerId == id, trackChanges).ToListAsync();
-        
+
 
 
 
