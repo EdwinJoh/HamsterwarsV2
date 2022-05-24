@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace HamsterwarsV2.Ui.Services
         public async Task<Hamster> GetRandomHamsterAsync()
         {
             var respons = await _httpClient.GetFromJsonAsync<Hamster>("hamster/random");
-            return respons!;
+            return respons;
         }
         public async Task VotedHamsterAsync(int id, Hamster hamster)
         {
@@ -62,6 +63,26 @@ namespace HamsterwarsV2.Ui.Services
             {
                 return new Hamster { Name = "Removed" };
             }
+        }
+
+        public async Task<Hamster> CreateHamster(Hamster hamster)
+        {
+            var respons = await _httpClient.PostAsJsonAsync("hamster/",hamster);
+            var newHamster = (await respons.Content.ReadFromJsonAsync<Hamster>());
+            return newHamster;
+            
+        }
+        public async Task<IEnumerable<Matches>> HamsterMatches(int id )
+        {
+            var respons = await _httpClient.GetFromJsonAsync<IEnumerable<Matches>>($"matches/matchWinners{id}");
+            return respons!;
+        }
+
+        public async Task CreateMatchAsync(int winnerId, int loserId)
+        {
+            var newMatches = new Matches{ WinnerId = winnerId,LoserId = loserId,Timestamp = DateTime.Now };
+            await _httpClient.PostAsJsonAsync($"matches", newMatches);
+            
         }
     }
 }

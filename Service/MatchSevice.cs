@@ -40,12 +40,6 @@ namespace Service
             return matchDto;
         }
 
-        private async Task CheckIfMatchExsist(int id, bool trackChanges)
-        {
-            var match = await _repository.Matches.GetMatchAsync(id, trackChanges);
-            if (match is null)
-                throw new MatchNotFoundException(id);
-        }
         public async Task<MatchDto> CreateMatchAsync(MatchForCreationDto match)
         {
             var matchEnitity = _mapper.Map<Matches>(match);
@@ -66,11 +60,23 @@ namespace Service
         }
         public async Task<IEnumerable<MatchDto>> GetMatchWinnersAsync(int id, bool trackChanges)
         {
-            await CheckIfMatchExsist(id, trackChanges);
+            await CheckIdExsistInMatchesASync(id, trackChanges);
             var matchesDb = await _repository.Matches.GetMatchWinnersAsync(id, trackChanges);
-            var matchDto = _mapper.Map < IEnumerable<MatchDto>>(matchesDb);
+            var matchDto = _mapper.Map <IEnumerable<MatchDto>>(matchesDb);
 
             return matchDto;
+        }
+        private async Task CheckIfMatchExsist(int id, bool trackChanges)
+        {
+            var match = await _repository.Matches.GetMatchAsync(id, trackChanges);
+            if (match is null)
+                throw new MatchNotFoundException(id);
+        }
+        public async Task CheckIdExsistInMatchesASync(int id , bool trackChanges)
+        {
+            var match = await _repository.Matches.GetMatchWinnersAsync(id, trackChanges);
+            if (match is null)
+                throw new MatchNotFoundException(id);
         }
     }
 }

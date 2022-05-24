@@ -1,0 +1,70 @@
+﻿@page "/addHamster"
+@inject IRequestService _service
+@inject NavigationManager _nav
+
+
+
+<h1 class="mb-3 mt-3">Add Hamster</h1>
+
+<EditForm Model="@newHamster" class="row p-3" OnSubmit="@HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="col-md-6 mb-3">
+        <label for="Name">Name</label>
+        <InputText id="Name" @bind-Value="newHamster.Name" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Price">Age</label>
+        <InputNumber id="age" @bind-Value="newHamster.Age" class="form-control" />
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label for="Description">Favorite Food</label>
+        <InputTextArea id="favFood" @bind-Value="newHamster.FavFood" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Description">Favorite activity</label>
+        <InputTextArea id="loves" @bind-Value="newHamster.Loves" class="form-control" />
+    </div>
+    <div class="col-md-6 md-3">
+        <InputText placeholder="Image name" id="ImgName" @bind-Value="@newHamster.ImgName" />
+
+    </div>
+
+    <CheckBox @bind-Checked="@CheckBoxValue">Check Box</CheckBox>
+
+    @if (CheckBoxValue)
+    {
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+    }
+    @if (CreatedDialogOpen)
+    {
+        <ModalCreatedHamster hamster="@newHamster" OnClose="@OnDialogClose"></ModalCreatedHamster>
+    }
+
+
+    
+
+</EditForm>
+
+
+
+@code {
+    public bool CheckBoxValue = true;
+    public Hamster newHamster = new Hamster();
+    private bool CreatedDialogOpen { get; set; } = false;
+
+    async Task HandleSubmit()
+    {
+        await _service.CreateHamster(newHamster);
+        CreatedDialogOpen = true;
+
+    }
+    private void OnDialogClose()
+    {
+        CreatedDialogOpen = false;
+        _nav.NavigateTo("/gallery");
+    }
+}

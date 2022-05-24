@@ -1,16 +1,18 @@
 ﻿@inject IRequestService _service
+@inject NavigationManager _nav
 
 
 
 <div class="column">
 
 
-<a @onclick="() => Voted(Competitor,Opponent)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>
+    @*<a @onclick="() => Voted(Competitor,Opponent)" href=""><img class="img-thumbnail" src="/Content/@Competitor.ImgName"></a>*@
+    <input type="image" @onclick="(() => Voted(Competitor, Opponent))" src="/Images/@Competitor.ImgName" style="width:600px;height:400px;">
 
 
     <div class="infoBox">
 
-        <h1 class="text-left">@Competitor.Name</h1> 
+        <h1 class="text-left">@Competitor.Name</h1>
         <p class="text-left">Age:&nbsp;@Competitor.Age</p>
         <p class="text-left">Favorite food:&nbsp;@Competitor.FavFood</p>
         <p class="text-left">Favorite activity:&nbsp;@Competitor.Loves</p>
@@ -35,6 +37,12 @@
         Loser.Defeats++;
         Loser.Games++;
         await _service.VotedHamsterAsync(Loser.Id, Loser);
+        await SaveMatch(Winner.Id, Loser.Id);
+        _nav.NavigateTo(_nav.Uri, forceLoad: true);
+    }
+    private async Task SaveMatch(int winnerId, int loserId)
+    {
+        await _service.CreateMatchAsync(winnerId, loserId);
 
     }
 

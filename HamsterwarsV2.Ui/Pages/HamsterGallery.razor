@@ -1,6 +1,8 @@
-﻿@inject IRequestService _service
+﻿
+@inject IRequestService _service
 @inject NavigationManager _nav
 @page "/gallery"
+
 
 
 <h3>HamsterGallery</h3>
@@ -11,6 +13,7 @@
 }
 else
 {
+     <button @onclick="@(()=>_nav.NavigateTo("/addHamster"))" type="button" class="btn btn-primary">Add Hamster</button>
     <div class="row">
         @foreach (var hamster in Hamsters)
         {

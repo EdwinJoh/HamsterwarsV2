@@ -19,7 +19,7 @@ namespace HamsterwarsV2.Presentation.Controllers
             var hamsters = await _service.Hamster.GetAllHamstersAsync( trackChanges: false);
             return Ok(hamsters);
         }
-        [HttpGet("{id:int}" /*Name = "HamsterById"*/)]
+        [HttpGet("{id:int}", Name = "HamsterById")]
         public async Task<IActionResult> GetHamster(int id)
         {
             var hamster = await _service.Hamster.GetHamsterAsync(id, trackChanges: false);

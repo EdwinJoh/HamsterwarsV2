@@ -1,0 +1,95 @@
+﻿@page "/matchWinner/{id:int}"
+@inject IRequestService _service
+<style>
+    img {
+        border-radius: 50%;
+    }
+</style>
+
+@if (SelectedHamster is null)
+{
+    <p>Loading..</p>
+}
+else
+{
+    <h1> @SelectedHamster.Name</h1>
+
+    <h1>Matches</h1>
+    if (Matches == null)
+    {
+        <p> This hamster has not matches yet, play some battles or try another hamster. </p>
+    }
+    else
+    {
+        <div class="row">
+            <img style="width: 300px; height: 300px;" src="/Content/@SelectedHamster.ImgName" />
+            <div class="col-lg-6 mb-5">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="label">Matches</h4>
+
+                    </div>
+                    <div class="card-body">
+                        <Table Id="hoverableTable" Class="table-hover" Tooltip>
+                            <tr hidden>
+                                <th style="width: 25px;" class="image">loser image</th>
+                                <th>Winner</th>
+                                <th>LOSER</th>
+                            </tr>
+                            @foreach (var data in Matches)
+                            {
+                                loserHamster(data.LoserId);
+                                
+                                <tr hidden>
+                                    <td class="image">
+                                        <img style="width: 90px; height: 90px;" src="/Content/@Loser.ImgName" />
+                                    </td>
+                                    <td>@SelectedHamster.Name</td>
+                                    <td>@Loser.Name</td>
+                                </tr>
+                            }
+                        </Table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+}
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    public Hamster? SelectedHamster { get; set; }
+    public Hamster Loser { get; set; }
+
+    private IEnumerable<Hamster>? Hamsters { get; set; }
+    private IEnumerable<Matches>? Matches { get; set; }
+    public int Procent { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Hamsters = await _service.GetAllHamstersAsync();
+        Matches = await _service.HamsterMatches(Id);
+        SelectedHamster = Hamsters.First(h => h.Id.Equals(Id));
+    }
+    private int procent(int wins, int games)
+    {
+        if (games == 0) return 0;
+
+        decimal number = (decimal)wins / (decimal)games;
+        number = Math.Round(number * 100);
+        Procent = (int)number;
+        return (int)number;
+    }
+    private Hamster loserHamster( int id)
+    {
+        Loser = _service.GetMatchHamster(id, Hamsters);
+        return Loser;
+
+    }
+    }

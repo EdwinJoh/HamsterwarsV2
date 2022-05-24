@@ -25,7 +25,9 @@ namespace Repository
         public async Task<Hamster> GetRandomHamster(int id, bool trackChanges) =>
                 await FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
 
-
+        public async Task<ICollection<Hamster>> GetHamsterbyIdsAsync(bool trackChanges) =>
+            await FindAll(trackChanges)
+            .ToListAsync();
 
 
 

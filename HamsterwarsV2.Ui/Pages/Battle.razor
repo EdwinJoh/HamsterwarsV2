@@ -7,23 +7,27 @@
 {
     <p>loading</p>
 }
-<div class="row">
+else
+{
+
+    <div class="row">
 
 
-    <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo"></BattleHamster>
+        <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo"></BattleHamster>
 
-    <div class=" column justify-content-center text-center">
-        <div class="vertical-center">
-            <h2> VS </h2>
+        <div class=" column justify-content-center text-center">
+            <div class="vertical-center">
+                <h2> VS </h2>
+            </div>
+
+
+
         </div>
-
-
-
-    </div>
         <BattleHamster Competitor="@CompetitorTwo" Opponent="@CompetitorOne"></BattleHamster>
 
 
-</div>
+    </div>
+}
 
 
 @code {
@@ -33,11 +37,12 @@
     protected override async Task OnInitializedAsync()
     {
         CompetitorOne = await _service.GetRandomHamsterAsync();
+
         CompetitorTwo = await _service.GetRandomHamsterAsync();
         while (CompetitorOne.Id == CompetitorTwo.Id)
         {
             CompetitorTwo = await _service.GetRandomHamsterAsync();
         }
     }
-  
+
     }

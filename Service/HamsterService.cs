@@ -68,8 +68,15 @@ namespace Service
         }
         public async Task<HamsterDto> GetRandomHamsterAsync(bool trackChanges)
         {
+            var hamsters = await _repository.Hamster.GetHamsterbyIdsAsync(trackChanges);
+
             Random rand = new Random();
-            var hamsterEntity = await _repository.Hamster.GetRandomHamster(rand.Next(1, 20), trackChanges);
+                var hamsterEntity =  await _repository.Hamster.GetRandomHamster(rand.Next(1, hamsters.Count), trackChanges);
+            while(hamsterEntity is null)
+            {
+                hamsterEntity = await _repository.Hamster.GetRandomHamster(rand.Next(1, hamsters.Count), trackChanges);
+            }
+            
             var hamsterDto = _mapper.Map<HamsterDto>(hamsterEntity);
             return hamsterDto;
 
@@ -78,7 +85,7 @@ namespace Service
         {
             var hamstersDb = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
             var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamstersDb);
-            var TopFive = hamsterDto.OrderByDescending(w => w.Wins).Take(5).Where(h=> h.Games >1);          
+            var TopFive = hamsterDto.OrderByDescending(w => w.Wins).Take(5).Where(h => h.Games > 1);
             return TopFive;
         }
         public async Task<IEnumerable<HamsterDto>> GetTopFiveLosersAsync(bool trackChanges)

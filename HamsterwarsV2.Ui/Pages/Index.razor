@@ -1,9 +1,29 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@inject NavigationManager _nav
 
-<h1>Hello, world!</h1>
+<h1> Welcome to Hamsterwars 2.0</h1>
+<div>
+    <p>
+        <strong>Gallery:</strong> Here we display all the hamsters available in our application.<br />
+        Hover over the hamster picture to see information about the hamster.<br />
+        You can click on the hamster's name to get to that hamsters site and see<br />
+        the match history for that hamster
+    </p>
+    <p>
+        <strong>Battle:</strong> In the battle segment you get to choose between two hamsters <br />
+        click on the hamster you feel is the cutest one.
+    </p>
+    <p>
+        <strong>Statistic:</strong> Here we display your top five winning hamster and out top five <br>
+        loosing hamsters you can see how many wins each hamster have <br />
+        and how many games they done.
+    </p>
+    <p>
+        <strong>History:</strong> In the history section you can see an overview over all the registrated matches
+    </p>
+    <br />
+     <button @onclick="@(()=>_nav.NavigateTo("/battle"))" type="button" class="btn btn-primary">battle</button>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+</div>
