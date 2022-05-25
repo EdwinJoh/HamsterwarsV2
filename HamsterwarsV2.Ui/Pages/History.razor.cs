@@ -1,6 +1,7 @@
 ﻿using Entities.Models;
 using Microsoft.AspNetCore.Components;
-using Shared.DataTransferObjects;
+using SharedHelpers.DataTransferObjects;
+using Syncfusion.Blazor.Grids;
 
 namespace HamsterwarsV2.Ui.Pages
 {
@@ -16,7 +17,8 @@ namespace HamsterwarsV2.Ui.Pages
         {
             //Hamsters = await _service.GetAllHamstersAsync();
             Matches = await _service.GetAllMatchesAsync();
-            
+            test = (List<MatchHistoryDto>?)await _service.GetAllMatchesAsync();
+
         }
 
         //private void GetMatch(int winnerId, int loserId)
@@ -30,7 +32,17 @@ namespace HamsterwarsV2.Ui.Pages
             await _service.RemoveObjectAsync<Matches>("matches", match.Id);
             _nav.NavigateTo(_nav.Uri, forceLoad: true);
         }
-              
-      
+        private SfGrid<MatchHistoryDto> DefaultGrid;
+        public int GridHeight;
+        public void Load(object args)
+        {
+            var RowHeight = 37; //height of the each row
+            Int32.TryParse(this.DefaultGrid.Height, out GridHeight); //datagrid height
+            var PageSize = (this.DefaultGrid.PageSettings as GridPageSettings).PageSize; //initial page size
+            decimal PageResize = ((GridHeight) - (PageSize * RowHeight)) / RowHeight; //new page size is obtained here
+#pragma warning disable BL0005
+            (this.DefaultGrid.PageSettings as GridPageSettings).PageSize = PageSize + (int)Math.Round(PageResize);
+#pragma warning restore BL0005
+        }
     }
 }

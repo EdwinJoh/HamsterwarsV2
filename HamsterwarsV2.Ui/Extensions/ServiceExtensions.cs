@@ -2,7 +2,7 @@
 using Blazored.Toast;
 using Entities.Models;
 using HamsterwarsV2.Ui.Services;
-using Shared.DataTransferObjects;
+using SharedHelpers.DataTransferObjects;
 using Syncfusion.Blazor;
 
 namespace HamsterwarsV2.Ui.Extensions

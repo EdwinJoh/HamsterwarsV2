@@ -1,5 +1,5 @@
 ﻿using Entities.Models;
-using Shared.DataTransferObjects;
+using SharedHelpers.DataTransferObjects;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;

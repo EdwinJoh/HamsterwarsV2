@@ -4,7 +4,7 @@ using Contracts;
 using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
-using Shared.DataTransferObjects;
+using SharedHelpers.DataTransferObjects;
 using Shared.RequestFeatures;
 
 namespace Service

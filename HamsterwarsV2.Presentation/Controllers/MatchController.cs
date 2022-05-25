@@ -1,7 +1,7 @@
 ﻿using HamsterwarsV2.Presentation.ActionFilters;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
-using Shared.DataTransferObjects;
+using SharedHelpers.DataTransferObjects;
 using Shared.RequestFeatures;
 
 namespace HamsterwarsV2.Presentation.Controllers
