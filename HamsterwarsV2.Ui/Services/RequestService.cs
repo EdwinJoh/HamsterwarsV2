@@ -51,7 +51,7 @@ namespace HamsterwarsV2.Ui.Services
         public async Task<IEnumerable<MatchHistoryDto>> GetAllMatchesAsync()
         {
             var respons = await _httpClient.GetFromJsonAsync<IEnumerable<MatchHistoryDto>>("matches/matchHamsters");
-            return respons!;
+            return respons!.ToList();
         }
         public Hamster GetMatchHamster(int id, IEnumerable<Hamster> hamsters)
         {
