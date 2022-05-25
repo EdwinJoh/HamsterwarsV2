@@ -1,5 +1,5 @@
 ﻿@inject IRequestService _service
-
+@inject NavigationManager _nav
 <div class="column">
     <div class="flip-card">
         <div class="flip-card-inner">
@@ -32,13 +32,13 @@
     {
         DeleteDialogOpen = true;
         await _service.RemoveObjectAsync<Hamster>("hamster", hamster.Id);
-        StateHasChanged();
     }
     private void OnDeleteDialogClose(bool accepted)
     {
         DeleteDialogOpen = false;
+        _nav.NavigateTo(_nav.Uri, forceLoad: true);
 
-        StateHasChanged();
+
     }
 
 }

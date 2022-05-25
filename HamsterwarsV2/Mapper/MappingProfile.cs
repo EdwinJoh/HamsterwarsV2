@@ -17,7 +17,7 @@ namespace HamsterwarsV2.Mapper
             CreateMap<Hamster, HamsterDto>();
             CreateMap<HamsterForCreationDto, Hamster>();
             CreateMap<HamsterForUpdateDto, Hamster>().ReverseMap();
-
+            CreateMap<MatchHistoryDto, Matches>();
             CreateMap<MatchForCreationDto, Matches>();
             CreateMap<Matches, MatchDto>();
 

@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace HamsterwarsV2.Ui.Services
     public interface IRequestService
     {
         Task<IEnumerable<Hamster>> GetAllHamstersAsync();
-        Task<IEnumerable<Matches>> GetAllMatchesAsync();
+        Task<IEnumerable<MatchHistoryDto>> GetAllMatchesAsync();
         Task RemoveObjectAsync<T>(string objType, int id);
         Task<Hamster> GetRandomHamsterAsync();
         Hamster GetMatchHamster(int id, IEnumerable<Hamster> hamsters);

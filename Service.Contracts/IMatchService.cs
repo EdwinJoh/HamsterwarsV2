@@ -16,6 +16,7 @@ namespace Service.Contracts
         Task<MatchDto> CreateMatchAsync(MatchForCreationDto match);
         Task DeleteMatchAsync(int id,bool trackChanges);
         Task<IEnumerable<MatchDto>> GetMatchWinnersAsync(int id, bool trackChanges);
+        Task<IEnumerable<MatchHistoryDto>> GetAllMatchHamsters();
         
     }
 }

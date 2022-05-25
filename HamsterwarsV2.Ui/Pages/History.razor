@@ -1,5 +1,6 @@
 ﻿@inject IRequestService _service
 @page "/history"
+@inject NavigationManager _nav
 <h3>History</h3>
 
 @if (Hamsters is null || Matches is null)
@@ -8,14 +9,9 @@
 }
 else
 {
-    <select @bind="CheckSelected" style="padding:1rem;">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-        <option value="10">10</option>
-    </select>
+  
 
-    <button type="button" @onclick="RemoveAll" class="btn btn-danger float-end">Remove all</button>
+   
     <table class="table table-dark">
         <thead>
             <tr>
@@ -28,71 +24,18 @@ else
         <tbody>
             @foreach (var result in Matches)
             {
-                GetMatch(result.WinnerId, result.LoserId);
+                
 
                 <tr>
                     <th scope="row">@result.Id</th>
-                    <td>@Winner.Name</td>
-                    <td>@Loser.Name</td>
-                    <td><button type="button" @onclick="(() => RemoveOneMatch(result))" class="btn btn-danger">Remove Match</button></td>
+                   
+                    <td>@result.Winner.Name</td>
+                    <td>@result.Loser.Name</td>
+                    
+                    @*<td><button type="button" @onclick="(() => RemoveOneMatch(result))" class="btn btn-danger">Remove Match</button></td>*@
                 </tr>
             }
         </tbody>
     </table>
 }
 
-@*@code {
-    protected override async Task OnInitializedAsync()
-    {
-        Hamsters = await _service.GetAllHamstersAsync();
-        Matches = await _service.GetAllMatchesAsync();
-    }
-    public IEnumerable<Hamster>? Hamsters { get; set; }
-    public IEnumerable<Matches>? Matches { get; set; }
-
-
-    public Hamster? Winner { get; set; }
-    public Hamster? Loser { get; set; }
-
-    private void GetMatch(int winnerId, int loserId)
-    {
-        Winner = _service.GetMatchHamster(winnerId, Hamsters);
-        Loser = _service.GetMatchHamster(loserId, Hamsters);
-    }
-   
-    private void RemoveOneMatch(Matches match)
-    {
-        
-    }
-
-
-    private void RemoveAll()
-    {
-
-    }
-     private string topPickQuantity { get; set; } = "5";
-     private string CheckSelected
-    {
-        get
-        {
-            return topPickQuantity;
-        }
-        set
-        {
-            ChangeEventArgs selectedEventArgs = new ChangeEventArgs();
-            selectedEventArgs.Value = value;
-            OnChangeSelected(selectedEventArgs);
-        }
-    }
-      private void OnChangeSelected(ChangeEventArgs e)
-    {
-        if (e.Value.ToString() != string.Empty)
-        {
-            topPickQuantity = e.Value.ToString();
-            //GetStats(topPickQuantity);
-        }
-    }
-
-
-}
-*@

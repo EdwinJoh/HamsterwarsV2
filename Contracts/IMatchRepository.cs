@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,10 @@ namespace Contracts
         void CreateMatch(Matches match);
         void DeleteMatch(Matches match);
         Task<IEnumerable<Matches>>GetMatchWinnersAsync(int id,bool trackChanges);
-        
-        
-        
+        Task<IEnumerable<MatchHistoryDto>> GetAllHamsterMatches();
+
+
+
+
     }
 }

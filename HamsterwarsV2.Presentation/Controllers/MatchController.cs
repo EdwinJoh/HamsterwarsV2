@@ -33,7 +33,7 @@ namespace HamsterwarsV2.Presentation.Controllers
             var createdMatch = await _service.Matches.CreateMatchAsync(match);
             return CreatedAtRoute("MatchById", new { id = createdMatch.Id }, createdMatch);
         }
-        [HttpDelete("{id:int}")]
+        [HttpDelete("delete/{id:int}")]
         public async Task<IActionResult> DeleteMatch(int id)
         {
             await _service.Matches.DeleteMatchAsync(id, trackChanges: false);
@@ -57,6 +57,12 @@ namespace HamsterwarsV2.Presentation.Controllers
             var hamsters = await _service.Hamster.GetTopFiveLosersAsync(trackChanges: false);
             return Ok(hamsters);
 
+        }
+        [HttpGet("matchHamsters")]
+        public async Task<IActionResult> GetMatchHamsters()
+        {
+            var matchHamsters = await _service.Matches.GetAllMatchHamsters();
+            return Ok(matchHamsters);
         }
     }
 }

@@ -78,5 +78,11 @@ namespace Service
             if (match is null)
                 throw new MatchNotFoundException(id);
         }
+        public async Task<IEnumerable<MatchHistoryDto>> GetAllMatchHamsters()
+        {
+            var test = await _repository.Matches.GetAllHamsterMatches();
+            var dto = _mapper.Map<IEnumerable<MatchHistoryDto>>(test);
+            return dto;
+        }
     }
 }

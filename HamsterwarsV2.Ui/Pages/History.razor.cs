@@ -1,21 +1,20 @@
 ﻿using Entities.Models;
 using Microsoft.AspNetCore.Components;
+using Shared.DataTransferObjects;
 
 namespace HamsterwarsV2.Ui.Pages
 {
-    public partial class History :ComponentBase
+    public partial class History : ComponentBase
     {
+        public IEnumerable<Hamster>? Hamsters { get; set; }
+        public IEnumerable<MatchHistoryDto>? Matches { get; set; }
+        public Hamster? Winner { get; set; }
+        public Hamster? Loser { get; set; }
         protected override async Task OnInitializedAsync()
         {
             Hamsters = await _service.GetAllHamstersAsync();
             Matches = await _service.GetAllMatchesAsync();
         }
-        public IEnumerable<Hamster>? Hamsters { get; set; }
-        public IEnumerable<Matches>? Matches { get; set; }
-
-
-        public Hamster? Winner { get; set; }
-        public Hamster? Loser { get; set; }
 
         private void GetMatch(int winnerId, int loserId)
         {
@@ -23,37 +22,12 @@ namespace HamsterwarsV2.Ui.Pages
             Loser = _service.GetMatchHamster(loserId, Hamsters);
         }
 
-        private void RemoveOneMatch(Matches match)
+        private async void RemoveOneMatch(Matches match)
         {
-
+            await _service.RemoveObjectAsync<Matches>("matches", match.Id);
+            _nav.NavigateTo(_nav.Uri, forceLoad: true);
         }
-
-
-        private void RemoveAll()
-        {
-
-        }
-        private string topPickQuantity { get; set; } = "5";
-        private string CheckSelected
-        {
-            get
-            {
-                return topPickQuantity;
-            }
-            set
-            {
-                ChangeEventArgs selectedEventArgs = new ChangeEventArgs();
-                selectedEventArgs.Value = value;
-                OnChangeSelected(selectedEventArgs);
-            }
-        }
-        private void OnChangeSelected(ChangeEventArgs e)
-        {
-            if (e.Value.ToString() != string.Empty)
-            {
-                topPickQuantity = e.Value.ToString();
-                //GetStats(topPickQuantity);
-            }
-        }
+              
+      
     }
 }
