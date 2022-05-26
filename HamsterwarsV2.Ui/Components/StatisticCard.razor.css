@@ -1,0 +1,13 @@
+﻿.title{
+    background-color:greenyellow;
+    text-align:left;
+}
+.row{
+    align-content:left;
+
+}
+    .row img {
+        display: block;
+        margin-left: auto;
+        
+    }

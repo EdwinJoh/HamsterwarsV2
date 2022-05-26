@@ -12,4 +12,3 @@ namespace Service.Contracts
         IMatchService Matches { get; }
     }
 }
-// TODO: where we will hold the definitions for the service interfaces that are going to encapsulate the main business logic.

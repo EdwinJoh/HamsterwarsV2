@@ -1,6 +1,6 @@
 ﻿.product-title {
     min-height: 72px;
-    color: #da0074;
+    color: black;
     background-color: lawngreen;
     font-size: 20px;
     font-weight: bold;
@@ -9,12 +9,14 @@
 }
 .loser {
     min-height: 72px;
-    color: #da0074;
+    color: black;
     background-color:orangered;
     font-size: 20px;
     font-weight: bold;
     line-height: 20px;
     letter-spacing: -0.02em;
+    text-align:right
+    
 }
 
 

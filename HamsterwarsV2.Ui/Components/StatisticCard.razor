@@ -3,7 +3,38 @@
         border-radius: 50%;
     }
 </style>
+
 <div class="col-lg-6 mb-5">
+    <RadzenCard>
+
+        <RadzenDataList WrapItems="true" AllowPaging="true" Data="@hamsters" TItem="Hamster" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+            <Template Context="data">
+                <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;">
+                    <h5 class="mb-1 ">@Header</h5>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 p-1 title">
+                                Name: <strong> @(data.Name)</strong><br>
+                                Age: @(data.Age) Years<br />
+                                Favorite Activity: @(data.Loves)
+                                Favorite Food@(data.FavFood)
+                            </div>
+                                <img style="width: 40%; height:40%" src="/Content/@data.ImgName">
+                           
+                            
+
+                        </div>
+                    </div>
+                </RadzenCard>
+            </Template>
+        </RadzenDataList>
+
+    </RadzenCard>
+</div>
+
+
+@*<div class="col-lg-6 mb-5">
     <div class="card h-100">
         <div class="card-header">
             <h4 class="label">@Header</h4>
@@ -33,7 +64,7 @@
         </div>
     </div>
 </div>
-
+*@
 
 @code {
     [Parameter]
