@@ -11,51 +11,52 @@
 }
 else
 {
-    <RadzenGrid AllowPaging="true"
-           
-            
+     <RadzenCard>
+
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@Matches" TItem="MatchHistoryDto" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                    <Template Context="matches">
+                        <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 p-3 product-title">
+                                        <h5 class="mb-0 " >Winner</h5>
+                                            @(matches.Winner.Name)
+                                    </div>
+                                    <div class="col-lg-3 p-3 loser">
+                                        <h5 class="mb-0 " >Loser</h5>
+                                            @(matches.Loser.Name)
+                                    </div>
+                                    <div class="col-lg-2 p-3 align-content-end">
+                                        <RadzenButton Text="Remove match" Class="w-100" />
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            </RadzenCard>
+    @* <RadzenGrid AllowPaging="true"
+            AllowFiltering="true"
+            AllowSorting="true"
+            FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
             PageSize="10"
             Data="@Matches"
             TItem="@MatchHistoryDto"
             ColumnWidth="300px">
 
         <Columns>
-            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Id" Title=""></RadzenGridColumn>
-            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Winner.Name" Title=""></RadzenGridColumn>
-            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Loser.Name" Title="Losers">
-            <Template Context="result">
-                    @*<RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium" Click="() => DeleteRow(result.Id)">Delete</RadzenButton>*@
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Id" Title="Match Id"></RadzenGridColumn>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Winner.Name" Title="Winners"></RadzenGridColumn>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Loser.Name" Title="Losers"></RadzenGridColumn>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="100px">
+                <Template Context="result">
+                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium" Click="() => DeleteRow(result.Id)">Delete</RadzenButton>
                 </Template>
             </RadzenGridColumn>
         </Columns>
 
-    </RadzenGrid>
+    </RadzenGrid>*@
 
-
-    @*<table class="table table-dark">
-        <thead>
-            <tr>
-                <th scope="col">Image</th>
-                <th scope="col">Winning Hamster</th>
-                <th scope="col">Losing Hamster</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var result in Matches)
-            {
-
-
-                <tr>
-                    <th scope="row">@result.Id</th>
-
-                    <td>@result.Winner.Name</td>
-                    <td>@result.Loser.Name</td>
-
-                    <td><button type="button" @onclick="(() => RemoveOneMatch(result))" class="btn btn-danger">Remove Match</button></td>
-                </tr>
-            }
-        </tbody>
-    </table>*@
 }
 

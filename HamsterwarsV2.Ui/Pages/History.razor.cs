@@ -1,5 +1,6 @@
 ﻿using Entities.Models;
 using Microsoft.AspNetCore.Components;
+using Radzen;
 using SharedHelpers.DataTransferObjects;
 
 
@@ -9,13 +10,16 @@ namespace HamsterwarsV2.Ui.Pages
     {
 
         public IEnumerable<MatchHistoryDto>? Matches { get; set; }
-
-
+        public IEnumerable<MatchHistoryDto>? SelectedMatches { get; set; }
+        void ClearSelection()
+        {
+            SelectedMatches = null;
+        }
 
         protected override async Task OnInitializedAsync()
         {
-
             Matches = await _service.GetAllMatchesAsync();
+            SelectedMatches = Matches.Take(1).ToList();
         }
 
 
