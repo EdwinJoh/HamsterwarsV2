@@ -10,22 +10,21 @@
     <p>Loading</p>
 }
 else
-{<RadzenGrid AllowPaging="true"
-            AllowFiltering="true"
-            AllowSorting="true"
-            FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+{
+    <RadzenGrid AllowPaging="true"
+           
+            
             PageSize="10"
-            Data="@AllRegisteredHamsterMatches"
-            TItem="@MatchResultDTO"
+            Data="@Matches"
+            TItem="@MatchHistoryDto"
             ColumnWidth="300px">
 
         <Columns>
-            <RadzenGridColumn TItem="@MatchResultDTO" Property="MatchId" Title="Match Id"></RadzenGridColumn>
-            <RadzenGridColumn TItem="@MatchResultDTO" Property="WinningHamster.Name" Title="Winners"></RadzenGridColumn>
-            <RadzenGridColumn TItem="@MatchResultDTO" Property="LosingHamster.Name" Title="Losers"></RadzenGridColumn>
-            <RadzenGridColumn TItem="@MatchResultDTO" Filterable="false" Sortable="false" TextAlign="TextAlign.Center" Width="100px">
-                <Template Context="result">
-                    <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium" Click="() => DeleteRow(result.MatchId)">Delete</RadzenButton>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Id" Title=""></RadzenGridColumn>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Winner.Name" Title=""></RadzenGridColumn>
+            <RadzenGridColumn TItem="@MatchHistoryDto" Property="Loser.Name" Title="Losers">
+            <Template Context="result">
+                    @*<RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium" Click="() => DeleteRow(result.Id)">Delete</RadzenButton>*@
                 </Template>
             </RadzenGridColumn>
         </Columns>
