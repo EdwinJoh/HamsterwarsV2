@@ -1,38 +1,57 @@
 ﻿@inject IRequestService _service
+@inject NavigationManager _nav
 @page "/battle"
 
 <h3 class="text-center">Battle</h3>
 
 @if (CompetitorOne is null || CompetitorTwo is null)
 {
-    <p>loading</p>
+    <RadzenCard>
+        <h4 class="mb-4">Loading</h4>
+        <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
+    </RadzenCard>
 }
 else
 {
 
-    <div class="row">
+    @if (MatchDone)
+    {
+        @if (Winner is null)
+        {
+            <RadzenCard>
+                <h4 class="mb-4">Loading</h4>
+                <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
+            </RadzenCard>
+        }
+        else
+        {
+            <BattleWinner WinningHamster="Winner"></BattleWinner>
+             <RadzenButton Click=@(args => OnClick()) Text="New match" Icon="refresh" ButtonStyle="ButtonStyle.Light" />
+        }
+    }
+    else
+    {
 
-
-        <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo"></BattleHamster>
-
-        <div class=" column justify-content-center text-center">
-            <div class="vertical-center">
-                <h2> VS </h2>
+        <div class="row">
+            <BattleHamster Competitor="@CompetitorOne" Opponent="@CompetitorTwo" battleDone="BattleDone" HamsterWinner="AssignWinner"></BattleHamster>
+            <div class=" column justify-content-center text-center">
+                <div class="vertical-center">
+                    <h2> VS </h2>
+                </div>
             </div>
-
-
-
+            <BattleHamster Competitor="@CompetitorTwo" battleDone="BattleDone" Opponent="@CompetitorOne" HamsterWinner="AssignWinner"></BattleHamster>
         </div>
-        <BattleHamster Competitor="@CompetitorTwo" Opponent="@CompetitorOne"></BattleHamster>
+    }
 
 
-    </div>
 }
 
 
 @code {
     public Hamster? CompetitorOne { get; set; }
     public Hamster? CompetitorTwo { get; set; }
+    public bool MatchDone { get; set; }
+    public Hamster Winner { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -44,5 +63,17 @@ else
             CompetitorTwo = await _service.GetRandomHamsterAsync();
         }
     }
+    private void BattleDone()
+    {
+        MatchDone = true;
+
+    }
+    private void AssignWinner(Hamster hamster)
+    {
+        Winner = hamster;
+    }
+    private void OnClick()
+    {
+_nav.NavigateTo(_nav.Uri, forceLoad: true);    }
 
     }

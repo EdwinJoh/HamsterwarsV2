@@ -1,24 +1,17 @@
 ﻿@inject IRequestService _service
-@inject NavigationManager _nav
-
 
 
 <div class="column">
 
-    <div class="polaroid">
-        
-        <a @onclick="() => Voted(Competitor,Opponent)" href="https://localhost:7012/battle"><img src="/Content/@Competitor.ImgName" alt="@Competitor.Name" style="width:100%" ></a>
-        <div class="container" >
+    <div class="polaroid ">
+        <input type="image" @onclick="(() => Voted(Competitor, Opponent))" src="/Content/@Competitor.ImgName"  style="width:100%;">
+        <div class="container">
             <h1>@Competitor.Name</h1>
-            <h3>@Competitor.Age</h3>
-            <h3>@Competitor.Loves</h3>
+            <h3>Age: @Competitor.Age</h3>
+            <h3>Favorite activity: @Competitor.Loves</h3>
         </div>
     </div>
-       
 </div>
-
-
-
 
 
 @code {
@@ -27,21 +20,22 @@
     [Parameter]
     public Hamster? Opponent { get; set; }
 
+
+    [Parameter]
+    public EventCallback<bool> battleDone{ get; set; }
+    [Parameter]
+    public EventCallback<Hamster> HamsterWinner{ get; set; }
+
     public async Task Voted(Hamster Winner, Hamster Loser)
     {
-        Winner.Wins++;
-        Winner.Games++;
-        await _service.VotedHamsterAsync(Winner.Id, Winner);
-        Loser.Defeats++;
-        Loser.Games++;
-        await _service.VotedHamsterAsync(Loser.Id, Loser);
-        await SaveMatch(Winner.Id, Loser.Id);
-        _nav.NavigateTo(_nav.Uri, forceLoad: true);
-    }
-    private async Task SaveMatch(int winnerId, int loserId)
-    {
-        await _service.CreateMatchAsync(winnerId, loserId);
+        await _service.VotedHamsterAsync(Winner.Id, Winner, "winner");
+        await _service.VotedHamsterAsync(Loser.Id, Loser, "loser");
+        await _service.CreateMatchAsync(Winner.Id, Loser.Id);
 
+       
+        await battleDone.InvokeAsync();
+        await HamsterWinner.InvokeAsync(Winner);
     }
+    
 
 }

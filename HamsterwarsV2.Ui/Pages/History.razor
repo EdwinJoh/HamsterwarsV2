@@ -5,9 +5,12 @@
 @inject NavigationManager _nav
 <h3>History</h3>
 
-@if (@*Hamsters is null ||*@ Matches is null)
+@if ( Matches is null)
 {
-    <p>Loading</p>
+    <RadzenCard>
+        <h4 class="mb-4">Loading</h4>
+        <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
+    </RadzenCard>
 }
 else
 {
@@ -18,7 +21,7 @@ else
                 <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;">
                     <div class="container">
                         <div class="row">
-
+                             <img style="width: 10%; height:10%" src="/Content/@matches.Winner.ImgName">
                             <div class="col-lg-3 p-3 product-title">
                                 <h5 class="mb-0 ">Winner</h5>
                                 @(matches.Winner.Name)
@@ -27,6 +30,7 @@ else
                                 <h5 class="mb-0 ">Loser</h5>
                                 @(matches.Loser.Name)
                             </div>
+                                 <img style="width: 10%; height:10%" src="/Content/@matches.Loser.ImgName">
                             <div class="col-lg-2 p-3 align-content-end">
                                 <button type="button" @onclick="(() => DeleteRow(matches.Id))" class="btn btn-danger">Remove Match</button>
                             </div>

@@ -1,0 +1,19 @@
+﻿
+<div class="polaroid center">
+<h3 >BattleWinner</h3>
+
+    <a class="text-black"href="/matchWinner/@WinningHamster.Id" <img class="" type="image" src="/Content/@WinningHamster.ImgName" style="width:100%;"></a>
+    <div class="container">
+        <h1>@WinningHamster.Name</h1>
+        <h3>Games: @WinningHamster.Games</h3>
+        <h3>Wins: @WinningHamster.Wins</h3>
+        <h3>Defeats: @WinningHamster.Defeats</h3>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Hamster WinningHamster { get; set; }
+    //[Parameter]
+    //public Hamster LosingHamster { get; set; }
+}

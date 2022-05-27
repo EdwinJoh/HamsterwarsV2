@@ -3,7 +3,10 @@
 
 @if (HamstersTopWinners is null|| HamstersTopLosers is null)
 {
-    <p>loading</p>
+     <RadzenCard>
+        <h4 class="mb-4">Loading</h4>
+        <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
+    </RadzenCard>
 }
 else
 {
