@@ -85,14 +85,14 @@ namespace Service
         {
             var hamstersDb = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
             var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamstersDb);
-            var TopFive = hamsterDto.OrderByDescending(w => w.Wins).Take(5).Where(h => h.Games > 1);
+            var TopFive = hamsterDto.OrderByDescending(w => w.Wins).Take(5).Where(h => h.Games >= 1);
             return TopFive;
         }
         public async Task<IEnumerable<HamsterDto>> GetTopFiveLosersAsync(bool trackChanges)
         {
             var hamstersDb = await _repository.Hamster.GetAllHamstersAsync(trackChanges);
             var hamsterDto = _mapper.Map<IEnumerable<HamsterDto>>(hamstersDb);
-            var TopFive = hamsterDto.OrderByDescending(w => w.Defeats).Take(5).Where(h => h.Games > 1);
+            var TopFive = hamsterDto.OrderByDescending(w => w.Defeats).Take(5).Where(h => h.Games >= 1);
             return TopFive;
         }
 

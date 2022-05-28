@@ -83,7 +83,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-2.jpg",
                             Loves = "Inte mycket",
                             Name = "Unexpected",
                             Wins = 0
@@ -95,7 +95,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-3.jpg",
                             Loves = "Inte mycket",
                             Name = "Sonny",
                             Wins = 0
@@ -107,7 +107,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-4.jpg",
                             Loves = "Inte mycket",
                             Name = "Atlanta",
                             Wins = 0
@@ -119,7 +119,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-5.jpg",
                             Loves = "Inte mycket",
                             Name = "Galaxy",
                             Wins = 0
@@ -131,7 +131,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-6.jpg",
                             Loves = "Inte mycket",
                             Name = "Piper",
                             Wins = 0
@@ -143,7 +143,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-7.jpg",
                             Loves = "Inte mycket",
                             Name = "Bliss",
                             Wins = 0
@@ -155,7 +155,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-8.jpg",
                             Loves = "Inte mycket",
                             Name = "Tyson",
                             Wins = 0
@@ -167,7 +167,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-9.jpg",
                             Loves = "Inte mycket",
                             Name = "Hugh Heifer",
                             Wins = 0
@@ -179,7 +179,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-10.jpg",
                             Loves = "Inte mycket",
                             Name = "Fury",
                             Wins = 0
@@ -191,7 +191,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-11.jpg",
                             Loves = "Inte mycket",
                             Name = "Duke",
                             Wins = 0
@@ -203,7 +203,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-12.jpg",
                             Loves = "Inte mycket",
                             Name = "Marvin",
                             Wins = 0
@@ -215,7 +215,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-13.jpg",
                             Loves = "Inte mycket",
                             Name = "Nexus",
                             Wins = 0
@@ -227,7 +227,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-14.jpg",
                             Loves = "Inte mycket",
                             Name = "Cherry",
                             Wins = 0
@@ -239,7 +239,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-15.jpg",
                             Loves = "Inte mycket",
                             Name = "Lollipop",
                             Wins = 0
@@ -251,7 +251,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-16.jpg",
                             Loves = "Inte mycket",
                             Name = "Olive",
                             Wins = 0
@@ -263,7 +263,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-17.jpg",
                             Loves = "Inte mycket",
                             Name = "Spiral",
                             Wins = 0
@@ -275,7 +275,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-18.jpg",
                             Loves = "Inte mycket",
                             Name = "Pulsar",
                             Wins = 0
@@ -287,7 +287,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-19.jpg",
                             Loves = "Inte mycket",
                             Name = "Cartman",
                             Wins = 0
@@ -299,7 +299,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-20.jpg",
                             Loves = "Inte mycket",
                             Name = "Keroppi",
                             Wins = 0
@@ -311,7 +311,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-21.jpg",
                             Loves = "Inte mycket",
                             Name = "Froggo",
                             Wins = 0
@@ -323,7 +323,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-22.jpg",
                             Loves = "Inte mycket",
                             Name = "Big Daddy",
                             Wins = 0
@@ -335,7 +335,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-23.jpg",
                             Loves = "Inte mycket",
                             Name = "Bubbles",
                             Wins = 0
@@ -347,7 +347,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-24.jpg",
                             Loves = "Inte mycket",
                             Name = "Captain Hook",
                             Wins = 0
@@ -359,7 +359,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-25.jpg",
                             Loves = "Inte mycket",
                             Name = "Harry",
                             Wins = 0
@@ -371,7 +371,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-26.jpg",
                             Loves = "Inte mycket",
                             Name = "Shelldon",
                             Wins = 0
@@ -383,7 +383,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-27.jpg",
                             Loves = "Inte mycket",
                             Name = "Bob",
                             Wins = 0
@@ -395,7 +395,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-28.jpg",
                             Loves = "Inte mycket",
                             Name = "Molly",
                             Wins = 0
@@ -407,7 +407,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-29.jpg",
                             Loves = "Inte mycket",
                             Name = "Shelly",
                             Wins = 0
@@ -419,7 +419,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-30.jpg",
                             Loves = "Inte mycket",
                             Name = "Claude",
                             Wins = 0
@@ -431,7 +431,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-31.jpg",
                             Loves = "Inte mycket",
                             Name = "Backspace",
                             Wins = 0
@@ -443,7 +443,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-32.jpg",
                             Loves = "Inte mycket",
                             Name = "Big Mac",
                             Wins = 0
@@ -455,7 +455,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-33.jpg",
                             Loves = "Inte mycket",
                             Name = "Goody",
                             Wins = 0
@@ -467,7 +467,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-34.jpg",
                             Loves = "Inte mycket",
                             Name = "Alie",
                             Wins = 0
@@ -479,7 +479,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-35.jpg",
                             Loves = "Inte mycket",
                             Name = "Ninja",
                             Wins = 0
@@ -491,7 +491,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-36.jpg",
                             Loves = "Inte mycket",
                             Name = "Lucifer",
                             Wins = 0
@@ -503,7 +503,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-37.jpg",
                             Loves = "Inte mycket",
                             Name = "God",
                             Wins = 0
@@ -515,7 +515,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-38.jpg",
                             Loves = "Inte mycket",
                             Name = "Casper",
                             Wins = 0
@@ -527,7 +527,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-39.jpg",
                             Loves = "Inte mycket",
                             Name = "Kevin",
                             Wins = 0
@@ -539,7 +539,7 @@ namespace HamsterwarsV2.Migrations
                             Defeats = 0,
                             FavFood = "Kottleter",
                             Games = 0,
-                            ImgName = "hamster-1.jpg",
+                            ImgName = "hamster-40.jpg",
                             Loves = "Inte mycket",
                             Name = "Lucifer",
                             Wins = 0
@@ -572,14 +572,14 @@ namespace HamsterwarsV2.Migrations
                         {
                             Id = 1,
                             LoserId = 2,
-                            Timestamp = new DateTime(2022, 5, 19, 14, 45, 53, 496, DateTimeKind.Local).AddTicks(1885),
+                            Timestamp = new DateTime(2022, 5, 28, 17, 52, 58, 553, DateTimeKind.Local).AddTicks(5206),
                             WinnerId = 1
                         },
                         new
                         {
                             Id = 2,
                             LoserId = 4,
-                            Timestamp = new DateTime(2022, 5, 19, 14, 45, 53, 496, DateTimeKind.Local).AddTicks(1932),
+                            Timestamp = new DateTime(2022, 5, 28, 17, 52, 58, 553, DateTimeKind.Local).AddTicks(5210),
                             WinnerId = 2
                         });
                 });
