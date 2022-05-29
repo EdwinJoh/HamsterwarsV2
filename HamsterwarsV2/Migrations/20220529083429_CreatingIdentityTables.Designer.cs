@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repository;
 
@@ -11,9 +12,10 @@ using Repository;
 namespace HamsterwarsV2.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20220529083429_CreatingIdentityTables")]
+    partial class CreatingIdentityTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -572,14 +574,14 @@ namespace HamsterwarsV2.Migrations
                         {
                             Id = 1,
                             LoserId = 2,
-                            Timestamp = new DateTime(2022, 5, 29, 10, 54, 37, 765, DateTimeKind.Local).AddTicks(7500),
+                            Timestamp = new DateTime(2022, 5, 29, 10, 34, 29, 123, DateTimeKind.Local).AddTicks(7519),
                             WinnerId = 1
                         },
                         new
                         {
                             Id = 2,
                             LoserId = 4,
-                            Timestamp = new DateTime(2022, 5, 29, 10, 54, 37, 765, DateTimeKind.Local).AddTicks(7504),
+                            Timestamp = new DateTime(2022, 5, 29, 10, 34, 29, 123, DateTimeKind.Local).AddTicks(7530),
                             WinnerId = 2
                         });
                 });
@@ -603,7 +605,7 @@ namespace HamsterwarsV2.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("FirsName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -682,22 +684,6 @@ namespace HamsterwarsV2.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "a6e772e2-345c-4ddd-b82d-98a45c59ab1c",
-                            ConcurrencyStamp = "9ca53e00-310b-4992-995c-e9a0b3734e8d",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        },
-                        new
-                        {
-                            Id = "c21e7f5c-fe44-4a51-817b-aa60135ae3c6",
-                            ConcurrencyStamp = "ea04c2f3-df9a-43d5-87a9-bb89d760aaec",
-                            Name = "Administrator",
-                            NormalizedName = "ADMINISTRATOR"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

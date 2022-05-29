@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using SharedHelpers.DataTransferObjects;
 using Shared.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HamsterwarsV2.Presentation.Controllers
 {
@@ -14,6 +15,7 @@ namespace HamsterwarsV2.Presentation.Controllers
         public HamsterController(IServiceManager serviceManager) => _service = serviceManager;
 
         [HttpGet]
+        [Authorize(Roles ="User")]
         public async Task<IActionResult> GetHamsters()
         {
             var hamsters = await _service.Hamster.GetAllHamstersAsync( trackChanges: false);

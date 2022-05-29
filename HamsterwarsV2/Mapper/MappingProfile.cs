@@ -20,6 +20,7 @@ namespace HamsterwarsV2.Mapper
             CreateMap<MatchHistoryDto, Matches>();
             CreateMap<MatchForCreationDto, Matches>();
             CreateMap<Matches, MatchDto>();
+            CreateMap<UserForRegistrationDto, User>();
 
 
         }
