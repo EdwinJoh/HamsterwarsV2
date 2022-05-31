@@ -40048,3 +40048,1766 @@
 2022-05-29 15:15:54.3016 Trace  Scanning Property LineEnding 'Default' NLog.Targets
 2022-05-29 15:15:54.3190 Trace FileTarget(Name=logfile) has 2 layouts
 2022-05-29 15:15:54.3190 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 08:05:00.3406 Info Message Template Auto Format enabled
+2022-05-31 08:05:00.3645 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 08:05:00.4181 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 08:05:00.4245 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:05:00.4245 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.4395 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:05:00.4395 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:05:00.4395 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.4395 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:05:00.4395 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.4395 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:05:00.4395 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.4395 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:05:00.4395 Info Adding target FileTarget(Name=logfile)
+2022-05-31 08:05:00.4548 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 08:05:00.4548 Trace ParseRulesElement
+2022-05-31 08:05:00.4739 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 08:05:00.4739 Debug --- NLog configuration dump ---
+2022-05-31 08:05:00.4739 Debug Targets:
+2022-05-31 08:05:00.4739 Debug FileTarget(Name=logfile)
+2022-05-31 08:05:00.4739 Debug Rules:
+2022-05-31 08:05:00.4739 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 08:05:00.4858 Debug --- End of NLog configuration dump ---
+2022-05-31 08:05:00.4858 Trace FindReachableObject<System.Object>:
+2022-05-31 08:05:00.4858 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 08:05:00.4858 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 08:05:00.4858 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 08:05:00.4858 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 08:05:00.5009 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:05:00.5009 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:05:00.5009 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5009 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:05:00.5009 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5009 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 08:05:00.5009 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:05:00.5009 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:05:00.5009 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:05:00.5009 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5009 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:05:00.5009 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5173 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:05:00.5173 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 08:05:00.5173 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 08:05:00.5173 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 08:05:00.5173 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 08:05:00.5173 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 08:05:00.5328 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 08:05:00.5328 Trace Initializing Layout Renderer: ${message}
+2022-05-31 08:05:00.5328 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:05:00.5328 Trace Initializing Layout Renderer: ${level}
+2022-05-31 08:05:00.5328 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:05:00.5328 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 08:05:00.5328 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 08:05:00.5328 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.5472 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:05:00.5472 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:05:00.5472 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:05:00.5472 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5472 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:05:00.5472 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5472 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:05:00.5472 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:05:00.5472 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 08:05:00.5472 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:05:00.5635 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 08:05:00.5635 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:05:00.5635 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:05:00.5635 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:05:00.5635 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5635 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:05:00.5635 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:05:00.5635 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 08:05:00.5635 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 08:05:00.5635 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 08:05:00.5785 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 08:05:00.5785 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:05:00.5785 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 08:05:00.5785 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:05:00.5785 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 08:05:00.5785 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 08:05:00.5785 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 08:06:44.9887 Info Message Template Auto Format enabled
+2022-05-31 08:06:45.0555 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 08:06:45.1804 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 08:06:45.1945 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:06:45.2132 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.2244 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:06:45.2244 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:06:45.2244 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.2244 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:06:45.2391 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.2391 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:06:45.2391 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.2531 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:06:45.2531 Info Adding target FileTarget(Name=logfile)
+2022-05-31 08:06:45.2531 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 08:06:45.2710 Trace ParseRulesElement
+2022-05-31 08:06:45.3191 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 08:06:45.3191 Debug --- NLog configuration dump ---
+2022-05-31 08:06:45.3311 Debug Targets:
+2022-05-31 08:06:45.3311 Debug FileTarget(Name=logfile)
+2022-05-31 08:06:45.3451 Debug Rules:
+2022-05-31 08:06:45.3451 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 08:06:45.3451 Debug --- End of NLog configuration dump ---
+2022-05-31 08:06:45.3451 Trace FindReachableObject<System.Object>:
+2022-05-31 08:06:45.3618 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 08:06:45.3618 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 08:06:45.3618 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 08:06:45.3618 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 08:06:45.3618 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:06:45.3790 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:06:45.3790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.3790 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:06:45.3790 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.3790 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 08:06:45.3790 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:06:45.3790 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:06:45.3790 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:06:45.3920 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.3920 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:06:45.3920 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.3920 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:06:45.3920 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 08:06:45.3920 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 08:06:45.3920 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 08:06:45.4072 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 08:06:45.4072 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 08:06:45.4250 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 08:06:45.4250 Trace Initializing Layout Renderer: ${message}
+2022-05-31 08:06:45.4250 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:06:45.4250 Trace Initializing Layout Renderer: ${level}
+2022-05-31 08:06:45.4250 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:06:45.4250 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 08:06:45.4400 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 08:06:45.4400 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.4400 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:06:45.4400 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:06:45.4400 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 08:06:45.4543 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.4543 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 08:06:45.4543 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.4543 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 08:06:45.4543 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:06:45.4543 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 08:06:45.4708 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 08:06:45.4708 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 08:06:45.4708 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 08:06:45.4708 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:06:45.4708 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 08:06:45.4708 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.4865 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 08:06:45.4865 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 08:06:45.4865 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 08:06:45.4865 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 08:06:45.4865 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 08:06:45.4865 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 08:06:45.4865 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 08:06:45.4865 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 08:06:45.5010 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 08:06:45.5010 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 08:06:45.5010 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 08:06:45.5010 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 09:02:08.3194 Info Message Template Auto Format enabled
+2022-05-31 09:02:08.3697 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 09:02:41.8682 Info Message Template Auto Format enabled
+2022-05-31 09:02:41.9032 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 09:02:42.0406 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 09:02:42.0498 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:02:42.0634 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.0634 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:02:42.0845 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:02:42.0845 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.0845 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:02:42.0845 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.0966 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:02:42.0966 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.0966 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:02:42.0966 Info Adding target FileTarget(Name=logfile)
+2022-05-31 09:02:42.0966 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 09:02:42.0966 Trace ParseRulesElement
+2022-05-31 09:02:42.1372 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 09:02:42.1372 Debug --- NLog configuration dump ---
+2022-05-31 09:02:42.1417 Debug Targets:
+2022-05-31 09:02:42.1417 Debug FileTarget(Name=logfile)
+2022-05-31 09:02:42.1417 Debug Rules:
+2022-05-31 09:02:42.1417 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 09:02:42.1417 Debug --- End of NLog configuration dump ---
+2022-05-31 09:02:42.1417 Trace FindReachableObject<System.Object>:
+2022-05-31 09:02:42.1577 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 09:02:42.1577 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 09:02:42.1577 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 09:02:42.1577 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 09:02:42.1577 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:02:42.1577 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:02:42.1731 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.1731 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:02:42.1731 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.1731 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 09:02:42.1731 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:02:42.1731 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:02:42.1897 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:02:42.1897 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.1897 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:02:42.1897 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.1897 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:02:42.1897 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 09:02:42.2063 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 09:02:42.2063 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 09:02:42.2063 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 09:02:42.2210 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 09:02:42.2210 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 09:02:42.2210 Trace Initializing Layout Renderer: ${message}
+2022-05-31 09:02:42.2350 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:02:42.2350 Trace Initializing Layout Renderer: ${level}
+2022-05-31 09:02:42.2350 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:02:42.2350 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 09:02:42.2350 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 09:02:42.2350 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.2350 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:02:42.2350 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:02:42.2350 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:02:42.2350 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.2516 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:02:42.2516 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.2516 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:02:42.2516 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:02:42.2516 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 09:02:42.2516 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:02:42.2516 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 09:02:42.2516 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:02:42.2516 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:02:42.2516 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:02:42.2661 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.2661 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:02:42.2661 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:02:42.2661 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 09:02:42.2661 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 09:02:42.2661 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 09:02:42.2661 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 09:02:42.2661 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:02:42.2661 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 09:02:42.2661 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:02:42.2661 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 09:02:42.2661 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 09:02:42.2830 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 09:03:09.1109 Info Message Template Auto Format enabled
+2022-05-31 09:03:09.1534 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 09:03:09.2916 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 09:03:09.3059 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:03:09.3229 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.3339 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:03:09.3339 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:03:09.3339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.3476 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:03:09.3598 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.3598 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:03:09.3598 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.3598 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:03:09.3786 Info Adding target FileTarget(Name=logfile)
+2022-05-31 09:03:09.3786 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 09:03:09.3786 Trace ParseRulesElement
+2022-05-31 09:03:09.4071 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 09:03:09.4071 Debug --- NLog configuration dump ---
+2022-05-31 09:03:09.4071 Debug Targets:
+2022-05-31 09:03:09.4071 Debug FileTarget(Name=logfile)
+2022-05-31 09:03:09.4071 Debug Rules:
+2022-05-31 09:03:09.4263 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 09:03:09.4263 Debug --- End of NLog configuration dump ---
+2022-05-31 09:03:09.4263 Trace FindReachableObject<System.Object>:
+2022-05-31 09:03:09.4263 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 09:03:09.4381 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 09:03:09.4381 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 09:03:09.4381 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 09:03:09.4381 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:03:09.4381 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:03:09.4381 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.4381 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:03:09.4579 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.4579 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 09:03:09.4579 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:03:09.4579 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:03:09.4579 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:03:09.4579 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.4716 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:03:09.4716 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.4716 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:03:09.4716 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 09:03:09.4716 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 09:03:09.4716 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 09:03:09.4716 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 09:03:09.4860 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 09:03:09.4860 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 09:03:09.4860 Trace Initializing Layout Renderer: ${message}
+2022-05-31 09:03:09.4860 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:03:09.4860 Trace Initializing Layout Renderer: ${level}
+2022-05-31 09:03:09.4860 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:03:09.4860 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 09:03:09.5023 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 09:03:09.5023 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.5023 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:03:09.5023 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:03:09.5023 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 09:03:09.5023 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.5023 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 09:03:09.5158 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.5158 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 09:03:09.5158 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:03:09.5158 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 09:03:09.5158 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 09:03:09.5158 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 09:03:09.5158 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 09:03:09.5158 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:03:09.5158 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 09:03:09.5323 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.5323 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 09:03:09.5323 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 09:03:09.5323 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 09:03:09.5323 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 09:03:09.5323 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 09:03:09.5323 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 09:03:09.5323 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 09:03:09.5323 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 09:03:09.5486 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 09:03:09.5486 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 09:03:09.5486 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 09:03:09.5486 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 11:59:34.5521 Info Message Template Auto Format enabled
+2022-05-31 11:59:34.5688 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 11:59:34.6025 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 11:59:34.6025 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:34.6184 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.6184 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:34.6283 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:34.6283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.6283 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:34.6283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.6283 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:34.6283 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.6283 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:34.6283 Info Adding target FileTarget(Name=logfile)
+2022-05-31 11:59:34.6283 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 11:59:34.6283 Trace ParseRulesElement
+2022-05-31 11:59:34.6508 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 11:59:34.6508 Debug --- NLog configuration dump ---
+2022-05-31 11:59:34.6508 Debug Targets:
+2022-05-31 11:59:34.6508 Debug FileTarget(Name=logfile)
+2022-05-31 11:59:34.6508 Debug Rules:
+2022-05-31 11:59:34.6574 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 11:59:34.6574 Debug --- End of NLog configuration dump ---
+2022-05-31 11:59:34.6574 Trace FindReachableObject<System.Object>:
+2022-05-31 11:59:34.6574 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 11:59:34.6574 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 11:59:34.6574 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 11:59:34.6574 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 11:59:34.6574 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:34.6574 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:34.6574 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6574 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:34.6574 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6574 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 11:59:34.6574 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:34.6726 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:34.6726 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:34.6726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6726 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:34.6726 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6726 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:34.6726 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 11:59:34.6726 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 11:59:34.6726 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 11:59:34.6726 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 11:59:34.6726 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 11:59:34.6726 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${message}
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${level}
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 11:59:34.6884 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 11:59:34.6884 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.6884 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:34.6884 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:34.6884 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:34.6884 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6884 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:34.6884 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.6884 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:34.6884 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:34.7034 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 11:59:34.7034 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:34.7034 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 11:59:34.7034 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:34.7034 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:34.7034 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:34.7034 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.7034 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:34.7034 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:34.7034 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 11:59:34.7034 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 11:59:34.7034 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 11:59:34.7034 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 11:59:34.7034 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:34.7034 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 11:59:34.7034 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:34.7034 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 11:59:34.7034 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 11:59:34.7034 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 11:59:36.1226 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 11:59:36.1226 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 11:59:36.1298 Trace Flushing all 1 targets...
+2022-05-31 11:59:36.1298 Trace ForEachItemInParallel() 1 items
+2022-05-31 11:59:36.1298 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 11:59:36.1298 Trace Continuation invoked: 
+2022-05-31 11:59:36.1298 Trace Parallel task completed. 0 items remaining
+2022-05-31 11:59:36.1429 Debug Flush completed
+2022-05-31 11:59:36.1429 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 11:59:36.1429 Debug Closing logging configuration...
+2022-05-31 11:59:36.1429 Trace Closing FileTarget(Name=logfile)
+2022-05-31 11:59:36.1429 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 11:59:36.1429 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 11:59:36.1429 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:36.1429 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${level}
+2022-05-31 11:59:36.1429 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:36.1566 Trace Closing Layout Renderer: ${message}
+2022-05-31 11:59:36.1566 Debug Finished closing logging configuration.
+2022-05-31 11:59:36.1566 Info LogFactory has been closed.
+2022-05-31 11:59:56.4667 Info Message Template Auto Format enabled
+2022-05-31 11:59:56.4793 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 11:59:56.5055 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 11:59:56.5055 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:56.5190 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5190 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:56.5190 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:56.5190 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5190 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:56.5331 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5331 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:56.5331 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5331 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:56.5331 Info Adding target FileTarget(Name=logfile)
+2022-05-31 11:59:56.5331 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 11:59:56.5331 Trace ParseRulesElement
+2022-05-31 11:59:56.5514 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 11:59:56.5514 Debug --- NLog configuration dump ---
+2022-05-31 11:59:56.5514 Debug Targets:
+2022-05-31 11:59:56.5514 Debug FileTarget(Name=logfile)
+2022-05-31 11:59:56.5514 Debug Rules:
+2022-05-31 11:59:56.5514 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 11:59:56.5514 Debug --- End of NLog configuration dump ---
+2022-05-31 11:59:56.5514 Trace FindReachableObject<System.Object>:
+2022-05-31 11:59:56.5514 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 11:59:56.5639 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 11:59:56.5639 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 11:59:56.5639 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 11:59:56.5639 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:56.5639 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:56.5639 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5639 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:56.5639 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5639 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 11:59:56.5639 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:56.5639 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:56.5639 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:56.5639 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5639 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:56.5639 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5639 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:56.5639 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 11:59:56.5639 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 11:59:56.5639 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 11:59:56.5802 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 11:59:56.5802 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 11:59:56.5802 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 11:59:56.5802 Trace Initializing Layout Renderer: ${message}
+2022-05-31 11:59:56.5802 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:56.5802 Trace Initializing Layout Renderer: ${level}
+2022-05-31 11:59:56.5802 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:56.5802 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 11:59:56.5802 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 11:59:56.5802 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5943 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:56.5943 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:56.5943 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 11:59:56.5943 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5943 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 11:59:56.5943 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5943 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 11:59:56.5943 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:56.5943 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 11:59:56.5943 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 11:59:56.5943 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 11:59:56.5943 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 11:59:56.5943 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:56.5943 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 11:59:56.5943 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5943 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 11:59:56.5943 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 11:59:56.5943 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 11:59:56.5943 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 11:59:56.5943 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 11:59:56.5943 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 11:59:56.5943 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 11:59:56.5943 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 11:59:56.5943 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 11:59:56.6103 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 11:59:56.6103 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 11:59:56.6103 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 11:59:58.3811 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 11:59:58.3811 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 11:59:58.3811 Trace Flushing all 1 targets...
+2022-05-31 11:59:58.3811 Trace ForEachItemInParallel() 1 items
+2022-05-31 11:59:58.3811 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 11:59:58.3811 Trace Continuation invoked: 
+2022-05-31 11:59:58.3914 Trace Parallel task completed. 0 items remaining
+2022-05-31 11:59:58.3914 Debug Flush completed
+2022-05-31 11:59:58.3914 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 11:59:58.3914 Debug Closing logging configuration...
+2022-05-31 11:59:58.3914 Trace Closing FileTarget(Name=logfile)
+2022-05-31 11:59:58.3914 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 11:59:58.3914 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 11:59:58.3914 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:58.3914 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${level}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${literal}
+2022-05-31 11:59:58.3914 Trace Closing Layout Renderer: ${message}
+2022-05-31 11:59:58.3914 Debug Finished closing logging configuration.
+2022-05-31 11:59:58.3914 Info LogFactory has been closed.
+2022-05-31 12:00:19.8649 Info Message Template Auto Format enabled
+2022-05-31 12:00:19.8801 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 12:00:19.9082 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 12:00:19.9082 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:00:19.9082 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:19.9289 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:00:19.9289 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:00:19.9289 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:19.9289 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:00:19.9289 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:19.9289 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:00:19.9289 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:19.9289 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:00:19.9390 Info Adding target FileTarget(Name=logfile)
+2022-05-31 12:00:19.9390 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 12:00:19.9390 Trace ParseRulesElement
+2022-05-31 12:00:19.9567 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 12:00:19.9567 Debug --- NLog configuration dump ---
+2022-05-31 12:00:19.9567 Debug Targets:
+2022-05-31 12:00:19.9567 Debug FileTarget(Name=logfile)
+2022-05-31 12:00:19.9567 Debug Rules:
+2022-05-31 12:00:19.9567 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 12:00:19.9567 Debug --- End of NLog configuration dump ---
+2022-05-31 12:00:19.9567 Trace FindReachableObject<System.Object>:
+2022-05-31 12:00:19.9567 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 12:00:19.9567 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 12:00:19.9712 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:00:19.9712 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:00:19.9712 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:00:19.9712 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:00:19.9712 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9712 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:00:19.9712 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9712 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:00:19.9712 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:00:19.9712 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:00:19.9712 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:00:19.9712 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9712 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:00:19.9712 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9712 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:00:19.9712 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:00:19.9712 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 12:00:19.9712 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 12:00:19.9712 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 12:00:19.9856 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 12:00:19.9856 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 12:00:19.9856 Trace Initializing Layout Renderer: ${message}
+2022-05-31 12:00:19.9856 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:00:19.9856 Trace Initializing Layout Renderer: ${level}
+2022-05-31 12:00:19.9856 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:00:19.9856 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 12:00:19.9856 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:00:19.9856 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:19.9856 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:00:19.9856 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:00:19.9856 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:00:19.9856 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9856 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:00:19.9856 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:19.9856 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:00:20.0013 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:00:20.0013 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 12:00:20.0013 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:00:20.0013 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:00:20.0013 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:00:20.0013 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:00:20.0013 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:00:20.0013 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:20.0013 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:00:20.0013 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:00:20.0013 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 12:00:20.0013 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 12:00:20.0013 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:00:20.0013 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:00:20.0013 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:00:20.0013 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:00:20.0013 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:00:20.0013 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:00:20.0013 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 12:00:20.0013 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 12:00:20.9722 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 12:00:20.9722 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 12:00:20.9722 Trace Flushing all 1 targets...
+2022-05-31 12:00:20.9882 Trace ForEachItemInParallel() 1 items
+2022-05-31 12:00:20.9882 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 12:00:20.9882 Trace Continuation invoked: 
+2022-05-31 12:00:20.9882 Trace Parallel task completed. 0 items remaining
+2022-05-31 12:00:20.9882 Debug Flush completed
+2022-05-31 12:00:20.9882 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 12:00:20.9882 Debug Closing logging configuration...
+2022-05-31 12:00:20.9882 Trace Closing FileTarget(Name=logfile)
+2022-05-31 12:00:20.9882 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 12:00:20.9882 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 12:00:21.0012 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:00:21.0012 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${level}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:00:21.0012 Trace Closing Layout Renderer: ${message}
+2022-05-31 12:00:21.0012 Debug Finished closing logging configuration.
+2022-05-31 12:00:21.0012 Info LogFactory has been closed.
+2022-05-31 12:02:28.1947 Info Message Template Auto Format enabled
+2022-05-31 12:02:28.2074 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 12:02:28.2322 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 12:02:28.2382 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:29.0919 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 12:02:29.0919 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 12:02:29.0957 Trace Flushing all 1 targets...
+2022-05-31 12:02:29.0957 Trace ForEachItemInParallel() 1 items
+2022-05-31 12:02:29.0957 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 12:02:29.0957 Trace Continuation invoked: 
+2022-05-31 12:02:29.0957 Trace Parallel task completed. 0 items remaining
+2022-05-31 12:02:29.0957 Debug Flush completed
+2022-05-31 12:02:29.0957 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 12:02:29.0957 Debug Closing logging configuration...
+2022-05-31 12:02:29.0957 Trace Closing FileTarget(Name=logfile)
+2022-05-31 12:02:29.0957 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 12:02:29.0957 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 12:02:29.0957 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:02:29.0957 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:29.0957 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:29.1104 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${level}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:29.1104 Trace Closing Layout Renderer: ${message}
+2022-05-31 12:02:29.1104 Debug Finished closing logging configuration.
+2022-05-31 12:02:29.1104 Info LogFactory has been closed.
+2022-05-31 12:02:40.5773 Info Message Template Auto Format enabled
+2022-05-31 12:02:40.5919 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 12:02:40.6187 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 12:02:40.6187 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:40.6334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.6334 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:40.6429 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:40.6429 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.6429 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:40.6429 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.6429 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:40.6429 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.6429 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:40.6429 Info Adding target FileTarget(Name=logfile)
+2022-05-31 12:02:40.6429 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 12:02:40.6429 Trace ParseRulesElement
+2022-05-31 12:02:40.6645 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 12:02:40.6645 Debug --- NLog configuration dump ---
+2022-05-31 12:02:40.6645 Debug Targets:
+2022-05-31 12:02:40.6645 Debug FileTarget(Name=logfile)
+2022-05-31 12:02:40.6645 Debug Rules:
+2022-05-31 12:02:40.6645 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 12:02:40.6645 Debug --- End of NLog configuration dump ---
+2022-05-31 12:02:40.6750 Trace FindReachableObject<System.Object>:
+2022-05-31 12:02:40.6750 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 12:02:40.6750 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 12:02:40.6750 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:02:40.6750 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:02:40.6750 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:40.6750 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:40.6750 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6750 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:40.6750 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6750 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:02:40.6750 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:40.6750 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:40.6750 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:40.6750 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6750 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:40.6750 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6750 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:40.6750 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:02:40.6750 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 12:02:40.6750 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 12:02:40.6896 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 12:02:40.6896 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 12:02:40.6896 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 12:02:40.6896 Trace Initializing Layout Renderer: ${message}
+2022-05-31 12:02:40.6896 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:40.6896 Trace Initializing Layout Renderer: ${level}
+2022-05-31 12:02:40.6896 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:40.6896 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 12:02:40.6896 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:02:40.6896 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.6896 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:40.6896 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:40.6896 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:40.6896 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6896 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:40.6896 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.6896 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:40.7052 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:40.7052 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 12:02:40.7052 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:40.7052 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:02:40.7052 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:40.7052 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:40.7052 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:40.7052 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.7052 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:40.7052 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:40.7052 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 12:02:40.7052 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 12:02:40.7052 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:02:40.7052 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:02:40.7052 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:40.7052 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:02:40.7052 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:40.7052 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:02:40.7052 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 12:02:40.7052 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 12:02:41.6144 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 12:02:41.6144 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 12:02:41.6144 Trace Flushing all 1 targets...
+2022-05-31 12:02:41.6299 Trace ForEachItemInParallel() 1 items
+2022-05-31 12:02:41.6299 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 12:02:41.6299 Trace Continuation invoked: 
+2022-05-31 12:02:41.6299 Trace Parallel task completed. 0 items remaining
+2022-05-31 12:02:41.6299 Debug Flush completed
+2022-05-31 12:02:41.6299 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 12:02:41.6299 Debug Closing logging configuration...
+2022-05-31 12:02:41.6299 Trace Closing FileTarget(Name=logfile)
+2022-05-31 12:02:41.6299 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 12:02:41.6299 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 12:02:41.6299 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:41.6416 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${level}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:41.6416 Trace Closing Layout Renderer: ${message}
+2022-05-31 12:02:41.6416 Debug Finished closing logging configuration.
+2022-05-31 12:02:41.6416 Info LogFactory has been closed.
+2022-05-31 12:02:54.5244 Info Message Template Auto Format enabled
+2022-05-31 12:02:54.5414 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 12:02:54.5722 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 12:02:54.5722 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:54.5859 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.5859 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:54.5974 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:54.5974 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.5974 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:54.5974 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.5974 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:54.5974 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.5974 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:54.5974 Info Adding target FileTarget(Name=logfile)
+2022-05-31 12:02:54.5974 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 12:02:54.5974 Trace ParseRulesElement
+2022-05-31 12:02:54.6190 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 12:02:54.6190 Debug --- NLog configuration dump ---
+2022-05-31 12:02:54.6190 Debug Targets:
+2022-05-31 12:02:54.6190 Debug FileTarget(Name=logfile)
+2022-05-31 12:02:54.6190 Debug Rules:
+2022-05-31 12:02:54.6259 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 12:02:54.6259 Debug --- End of NLog configuration dump ---
+2022-05-31 12:02:54.6259 Trace FindReachableObject<System.Object>:
+2022-05-31 12:02:54.6259 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 12:02:54.6259 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 12:02:54.6259 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:02:54.6259 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:02:54.6259 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:54.6259 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:54.6259 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6259 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:54.6259 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6259 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:02:54.6259 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:54.6259 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:54.6259 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:54.6259 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6259 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:54.6417 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6417 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:54.6417 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:02:54.6417 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 12:02:54.6417 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 12:02:54.6417 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 12:02:54.6417 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 12:02:54.6417 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 12:02:54.6417 Trace Initializing Layout Renderer: ${message}
+2022-05-31 12:02:54.6417 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:54.6417 Trace Initializing Layout Renderer: ${level}
+2022-05-31 12:02:54.6417 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:54.6417 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 12:02:54.6417 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:02:54.6578 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.6578 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:54.6578 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:54.6578 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 12:02:54.6578 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6578 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 12:02:54.6578 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6578 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 12:02:54.6578 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:54.6578 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 12:02:54.6578 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 12:02:54.6578 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:02:54.6578 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 12:02:54.6578 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:54.6578 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 12:02:54.6578 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6578 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 12:02:54.6578 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 12:02:54.6578 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 12:02:54.6578 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 12:02:54.6578 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 12:02:54.6578 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 12:02:54.6578 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 12:02:54.6578 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 12:02:54.6578 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 12:02:54.6578 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 12:02:54.6578 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 12:02:54.6578 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 12:02:55.9530 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 12:02:55.9552 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 12:02:55.9552 Trace Flushing all 1 targets...
+2022-05-31 12:02:55.9552 Trace ForEachItemInParallel() 1 items
+2022-05-31 12:02:55.9702 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 12:02:55.9702 Trace Continuation invoked: 
+2022-05-31 12:02:55.9702 Trace Parallel task completed. 0 items remaining
+2022-05-31 12:02:55.9702 Debug Flush completed
+2022-05-31 12:02:55.9702 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 12:02:55.9702 Debug Closing logging configuration...
+2022-05-31 12:02:55.9702 Trace Closing FileTarget(Name=logfile)
+2022-05-31 12:02:55.9702 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 12:02:55.9702 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 12:02:55.9702 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:55.9702 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${level}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${literal}
+2022-05-31 12:02:55.9702 Trace Closing Layout Renderer: ${message}
+2022-05-31 12:02:55.9702 Debug Finished closing logging configuration.
+2022-05-31 12:02:55.9702 Info LogFactory has been closed.
+2022-05-31 13:38:23.6573 Info Message Template Auto Format enabled
+2022-05-31 13:38:23.6833 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 13:38:23.7502 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 13:38:23.7531 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:38:23.7531 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.7697 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:38:23.7697 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:38:23.7697 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.7697 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:38:23.7697 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.7824 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:38:23.7824 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.7824 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:38:23.7824 Info Adding target FileTarget(Name=logfile)
+2022-05-31 13:38:23.7824 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 13:38:23.7824 Trace ParseRulesElement
+2022-05-31 13:38:23.8015 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 13:38:23.8015 Debug --- NLog configuration dump ---
+2022-05-31 13:38:23.8015 Debug Targets:
+2022-05-31 13:38:23.8015 Debug FileTarget(Name=logfile)
+2022-05-31 13:38:23.8015 Debug Rules:
+2022-05-31 13:38:23.8015 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 13:38:23.8015 Debug --- End of NLog configuration dump ---
+2022-05-31 13:38:23.8135 Trace FindReachableObject<System.Object>:
+2022-05-31 13:38:23.8135 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 13:38:23.8135 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 13:38:23.8135 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:38:23.8135 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:38:23.8135 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:38:23.8135 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:38:23.8135 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8135 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:38:23.8135 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8135 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:38:23.8135 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:38:23.8135 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:38:23.8135 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:38:23.8135 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8289 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:38:23.8289 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8289 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:38:23.8289 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:38:23.8289 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 13:38:23.8289 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 13:38:23.8289 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 13:38:23.8289 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 13:38:23.8289 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 13:38:23.8289 Trace Initializing Layout Renderer: ${message}
+2022-05-31 13:38:23.8289 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${level}
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 13:38:23.8445 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 13:38:23.8445 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.8445 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:38:23.8445 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:38:23.8445 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:38:23.8445 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8445 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:38:23.8445 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8445 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 13:38:23.8445 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:38:23.8445 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 13:38:23.8445 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:38:23.8605 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:38:23.8605 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:38:23.8605 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8605 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:38:23.8605 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:38:23.8605 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 13:38:23.8605 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 13:38:23.8605 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:38:23.8605 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:38:23.8605 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:38:23.8605 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:38:23.8605 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:38:23.8605 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:38:23.8605 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 13:38:23.8605 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 13:39:00.5482 Info Message Template Auto Format enabled
+2022-05-31 13:39:00.5771 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 13:39:00.6337 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 13:39:00.6413 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:39:00.6413 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.6577 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:39:00.6577 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:39:00.6577 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.6577 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:39:00.6577 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.6577 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:39:00.6577 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.6577 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:39:00.6577 Info Adding target FileTarget(Name=logfile)
+2022-05-31 13:39:00.6577 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 13:39:00.6727 Trace ParseRulesElement
+2022-05-31 13:39:00.6727 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 13:39:00.6885 Debug --- NLog configuration dump ---
+2022-05-31 13:39:00.6885 Debug Targets:
+2022-05-31 13:39:00.6885 Debug FileTarget(Name=logfile)
+2022-05-31 13:39:00.6885 Debug Rules:
+2022-05-31 13:39:00.6885 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 13:39:00.6885 Debug --- End of NLog configuration dump ---
+2022-05-31 13:39:00.6885 Trace FindReachableObject<System.Object>:
+2022-05-31 13:39:00.6885 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 13:39:00.7047 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 13:39:00.7047 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:39:00.7047 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:39:00.7047 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:39:00.7047 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:39:00.7047 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7047 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:39:00.7047 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7047 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:39:00.7047 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:39:00.7047 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:39:00.7047 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:39:00.7047 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7199 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:39:00.7199 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7199 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:39:00.7199 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:39:00.7199 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 13:39:00.7199 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 13:39:00.7199 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 13:39:00.7199 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 13:39:00.7356 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 13:39:00.7356 Trace Initializing Layout Renderer: ${message}
+2022-05-31 13:39:00.7356 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:39:00.7356 Trace Initializing Layout Renderer: ${level}
+2022-05-31 13:39:00.7356 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:39:00.7356 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 13:39:00.7356 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 13:39:00.7356 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.7356 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:39:00.7356 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:39:00.7356 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:39:00.7356 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7356 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:39:00.7511 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7511 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:39:00.7511 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:39:00.7511 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 13:39:00.7511 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:39:00.7511 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 13:39:00.7511 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:39:00.7511 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:39:00.7511 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:39:00.7511 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7511 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:39:00.7511 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:39:00.7511 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 13:39:00.7689 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 13:39:00.7689 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:39:00.7689 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:39:00.7689 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:39:00.7689 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:39:00.7689 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:39:00.7689 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:39:00.7689 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 13:39:00.7689 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 13:42:58.5932 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 13:42:58.5968 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 13:42:58.5968 Trace Flushing all 1 targets...
+2022-05-31 13:42:58.6134 Trace ForEachItemInParallel() 1 items
+2022-05-31 13:42:58.6134 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 13:42:58.6134 Trace Continuation invoked: 
+2022-05-31 13:42:58.6134 Trace Parallel task completed. 0 items remaining
+2022-05-31 13:42:58.6134 Debug Flush completed
+2022-05-31 13:42:58.6252 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 13:42:58.6252 Debug Closing logging configuration...
+2022-05-31 13:42:58.6252 Trace Closing FileTarget(Name=logfile)
+2022-05-31 13:42:58.6252 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 13:42:58.6252 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 13:42:58.6252 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${literal}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${literal}
+2022-05-31 13:42:58.6252 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${literal}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${level}
+2022-05-31 13:42:58.6252 Trace Closing Layout Renderer: ${literal}
+2022-05-31 13:42:58.6412 Trace Closing Layout Renderer: ${message}
+2022-05-31 13:42:58.6412 Debug Finished closing logging configuration.
+2022-05-31 13:42:58.6412 Info LogFactory has been closed.
+2022-05-31 13:43:01.2318 Info Message Template Auto Format enabled
+2022-05-31 13:43:01.2742 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 13:57:08.2374 Info Message Template Auto Format enabled
+2022-05-31 13:57:08.2742 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 13:57:08.3715 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 13:57:08.3833 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:08.4053 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.4217 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:08.4260 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:08.4260 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.4260 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:08.4260 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.4260 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:08.4260 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.4385 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:08.4385 Info Adding target FileTarget(Name=logfile)
+2022-05-31 13:57:08.4385 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 13:57:08.4385 Trace ParseRulesElement
+2022-05-31 13:57:08.4652 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 13:57:08.4697 Debug --- NLog configuration dump ---
+2022-05-31 13:57:08.4697 Debug Targets:
+2022-05-31 13:57:08.4697 Debug FileTarget(Name=logfile)
+2022-05-31 13:57:08.4697 Debug Rules:
+2022-05-31 13:57:08.4697 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 13:57:08.4697 Debug --- End of NLog configuration dump ---
+2022-05-31 13:57:08.4697 Trace FindReachableObject<System.Object>:
+2022-05-31 13:57:08.4861 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 13:57:08.4861 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 13:57:08.4861 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:57:08.4861 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:57:08.4861 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:08.4861 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:08.4861 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.4861 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:08.4861 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5021 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:57:08.5021 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:08.5021 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:08.5021 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:08.5021 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5021 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:08.5021 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5021 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:08.5021 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:57:08.5021 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 13:57:08.5167 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 13:57:08.5167 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 13:57:08.5167 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 13:57:08.5167 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 13:57:08.5324 Trace Initializing Layout Renderer: ${message}
+2022-05-31 13:57:08.5324 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:08.5324 Trace Initializing Layout Renderer: ${level}
+2022-05-31 13:57:08.5324 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:08.5324 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 13:57:08.5324 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 13:57:08.5486 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.5486 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:08.5486 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:08.5486 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:08.5486 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5486 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:08.5486 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5486 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:08.5673 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:08.5673 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 13:57:08.5673 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:08.5673 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 13:57:08.5673 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:08.5673 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:08.5673 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:08.5673 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5794 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:08.5794 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:08.5794 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 13:57:08.5794 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 13:57:08.5794 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:57:08.5794 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:57:08.5794 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:08.5794 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:57:08.5942 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:08.5942 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:57:08.5942 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 13:57:08.5942 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 13:57:41.2558 Info Message Template Auto Format enabled
+2022-05-31 13:57:41.2811 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 13:57:41.3480 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 13:57:41.3480 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:41.3652 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.3652 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:41.3808 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:41.3808 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.3808 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:41.3808 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.3808 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:41.3808 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.3808 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:41.3808 Info Adding target FileTarget(Name=logfile)
+2022-05-31 13:57:41.3931 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 13:57:41.3931 Trace ParseRulesElement
+2022-05-31 13:57:41.4098 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 13:57:41.4098 Debug --- NLog configuration dump ---
+2022-05-31 13:57:41.4098 Debug Targets:
+2022-05-31 13:57:41.4098 Debug FileTarget(Name=logfile)
+2022-05-31 13:57:41.4098 Debug Rules:
+2022-05-31 13:57:41.4098 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 13:57:41.4098 Debug --- End of NLog configuration dump ---
+2022-05-31 13:57:41.4241 Trace FindReachableObject<System.Object>:
+2022-05-31 13:57:41.4241 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 13:57:41.4241 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 13:57:41.4241 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:57:41.4241 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:57:41.4241 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:41.4241 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:41.4241 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4241 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:41.4241 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4381 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:57:41.4381 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:41.4381 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:41.4381 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:41.4381 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4381 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:41.4381 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4381 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:41.4381 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:57:41.4381 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 13:57:41.4381 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 13:57:41.4381 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 13:57:41.4540 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 13:57:41.4540 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 13:57:41.4540 Trace Initializing Layout Renderer: ${message}
+2022-05-31 13:57:41.4540 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:41.4540 Trace Initializing Layout Renderer: ${level}
+2022-05-31 13:57:41.4540 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:41.4540 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 13:57:41.4540 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 13:57:41.4704 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.4704 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:41.4704 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:41.4704 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 13:57:41.4704 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4704 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 13:57:41.4704 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4704 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 13:57:41.4704 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:41.4704 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 13:57:41.4704 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 13:57:41.4869 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 13:57:41.4869 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 13:57:41.4869 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:41.4869 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 13:57:41.4869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4869 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 13:57:41.4869 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 13:57:41.4869 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 13:57:41.4869 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 13:57:41.4869 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 13:57:41.4869 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 13:57:41.5015 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 13:57:41.5015 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 13:57:41.5015 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 13:57:41.5015 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 13:57:41.5015 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 13:57:41.5015 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:09:45.6259 Info Message Template Auto Format enabled
+2022-05-31 14:09:45.6583 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:09:45.7373 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:09:45.7373 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:09:45.7672 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:45.7672 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:09:45.7911 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:09:45.7911 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:45.7911 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:09:45.7979 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:45.7979 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:09:45.7979 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:45.7979 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:09:45.7979 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:09:45.7979 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:09:45.8426 Trace ParseRulesElement
+2022-05-31 14:09:45.8787 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:09:45.9238 Debug --- NLog configuration dump ---
+2022-05-31 14:09:45.9238 Debug Targets:
+2022-05-31 14:09:45.9625 Debug FileTarget(Name=logfile)
+2022-05-31 14:09:45.9625 Debug Rules:
+2022-05-31 14:09:45.9751 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:09:45.9751 Debug --- End of NLog configuration dump ---
+2022-05-31 14:09:45.9956 Trace FindReachableObject<System.Object>:
+2022-05-31 14:09:45.9956 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:09:45.9956 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:09:46.0288 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:09:46.0437 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:09:46.0484 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:09:46.0484 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:09:46.0484 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.0992 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:09:46.0992 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.0992 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:09:46.0992 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:09:46.0992 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:09:46.0992 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:09:46.0992 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.1147 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:09:46.1147 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.1147 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:09:46.1147 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:09:46.1147 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:09:46.1147 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:09:46.1289 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:09:46.1561 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:09:46.1621 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:09:46.1621 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:09:46.1736 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:09:46.1884 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:09:46.1884 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:09:46.1884 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:09:46.1884 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:09:46.1884 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:46.1884 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:09:46.1884 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:09:46.1884 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:09:46.1884 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.1884 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:09:46.2045 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.2045 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:09:46.2284 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:09:46.2284 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:09:46.2284 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:09:46.2284 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:09:46.2284 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:09:46.2284 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:09:46.2352 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:09:46.2352 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.2352 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:09:46.2352 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:09:46.2352 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:09:46.2352 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:09:46.2352 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:09:46.2352 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:09:46.2352 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:09:46.2352 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:09:46.2352 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:09:46.2352 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:09:46.2352 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:09:46.2530 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:31:16.7115 Info Message Template Auto Format enabled
+2022-05-31 14:31:16.7558 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:31:16.8925 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:31:16.8925 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:31:16.9140 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:16.9254 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:31:16.9254 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:31:16.9384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:16.9384 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:31:16.9384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:16.9384 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:31:16.9384 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:16.9384 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:31:16.9384 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:31:16.9384 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:31:16.9553 Trace ParseRulesElement
+2022-05-31 14:31:17.0206 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:31:17.0206 Debug --- NLog configuration dump ---
+2022-05-31 14:31:17.0206 Debug Targets:
+2022-05-31 14:31:17.0206 Debug FileTarget(Name=logfile)
+2022-05-31 14:31:17.0206 Debug Rules:
+2022-05-31 14:31:17.0206 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:31:17.0206 Debug --- End of NLog configuration dump ---
+2022-05-31 14:31:17.0365 Trace FindReachableObject<System.Object>:
+2022-05-31 14:31:17.0365 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:31:17.0365 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:31:17.0365 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:31:17.0365 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:31:17.0365 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:31:17.0478 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:31:17.0478 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.0478 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:31:17.0478 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.0478 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:31:17.0478 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:31:17.0645 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:31:17.0645 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:31:17.0645 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:31:17.0645 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.0645 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:31:17.0645 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.0645 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:31:17.0645 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:31:17.0793 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:31:17.0793 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:31:17.0793 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:31:17.0793 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:31:17.0793 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:31:17.0949 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:31:17.0949 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:31:17.0949 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:31:17.0949 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:31:17.0949 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:31:17.0949 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:17.0949 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:31:17.1104 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:31:17.1104 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:31:17.1104 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.1104 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:31:17.1104 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.1104 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:31:17.1104 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:31:17.1104 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:31:17.1104 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:31:17.1263 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:31:17.1263 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:31:17.1263 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:31:17.1263 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:31:17.1263 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.1263 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:31:17.1263 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:31:17.1263 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:31:17.1263 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:31:17.1263 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:31:17.1413 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:31:17.1413 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:31:17.1413 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:31:17.1413 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:31:17.1413 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:31:17.1413 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:31:17.1413 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:33:43.9590 Info AppDomain Shutting down. LogFactory closing...
+2022-05-31 14:33:43.9590 Debug Stopping file watching for path 'C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2' filter 'nlog.config'
+2022-05-31 14:33:43.9737 Trace Flushing all 1 targets...
+2022-05-31 14:33:43.9737 Trace ForEachItemInParallel() 1 items
+2022-05-31 14:33:43.9855 Trace FileTarget(Name=logfile): FlushAsync
+2022-05-31 14:33:43.9855 Trace Continuation invoked: 
+2022-05-31 14:33:43.9855 Trace Parallel task completed. 0 items remaining
+2022-05-31 14:33:43.9855 Debug Flush completed
+2022-05-31 14:33:43.9855 Trace FileTarget(Name=logfile): FlushAsync Done
+2022-05-31 14:33:43.9855 Debug Closing logging configuration...
+2022-05-31 14:33:43.9855 Trace Closing FileTarget(Name=logfile)
+2022-05-31 14:33:43.9855 Debug FileTarget(Name=logfile): Closing...
+2022-05-31 14:33:43.9855 Debug FileTarget(Name=logfile): Closed.
+2022-05-31 14:33:43.9855 Trace Closing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:33:43.9855 Trace Closing Layout Renderer: ${literal}
+2022-05-31 14:33:43.9855 Trace Closing Layout Renderer: ${shortdate}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${literal}
+2022-05-31 14:33:44.0017 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${longdate}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${literal}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${level}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${literal}
+2022-05-31 14:33:44.0017 Trace Closing Layout Renderer: ${message}
+2022-05-31 14:33:44.0017 Debug Finished closing logging configuration.
+2022-05-31 14:33:44.0017 Info LogFactory has been closed.
+2022-05-31 14:34:20.2030 Info Message Template Auto Format enabled
+2022-05-31 14:34:20.2339 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:34:20.3045 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:34:20.3045 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:34:20.3181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.3181 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:34:20.3321 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:34:20.3321 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.3321 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:34:20.3321 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.3321 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:34:20.3321 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.3321 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:34:20.3321 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:34:20.3321 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:34:20.3450 Trace ParseRulesElement
+2022-05-31 14:34:20.3450 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:34:20.3606 Debug --- NLog configuration dump ---
+2022-05-31 14:34:20.3606 Debug Targets:
+2022-05-31 14:34:20.3606 Debug FileTarget(Name=logfile)
+2022-05-31 14:34:20.3606 Debug Rules:
+2022-05-31 14:34:20.3606 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:34:20.3606 Debug --- End of NLog configuration dump ---
+2022-05-31 14:34:20.3606 Trace FindReachableObject<System.Object>:
+2022-05-31 14:34:20.3606 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:34:20.3761 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:34:20.3761 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:34:20.3761 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:34:20.3761 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:34:20.3761 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:34:20.3761 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.3761 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:34:20.3761 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.3761 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:34:20.3761 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:34:20.3761 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:34:20.3761 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:34:20.3761 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.3909 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:34:20.3909 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.3909 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:34:20.3909 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:34:20.3909 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:34:20.3909 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:34:20.3909 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:34:20.3909 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:34:20.4068 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:34:20.4068 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:34:20.4068 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:34:20.4068 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:34:20.4068 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:34:20.4068 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:34:20.4068 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:34:20.4068 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.4068 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:34:20.4068 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:34:20.4068 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:34:20.4068 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.4068 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:34:20.4068 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.4068 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:34:20.4247 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:34:20.4247 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:34:20.4247 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:34:20.4247 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:34:20.4247 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:34:20.4247 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:34:20.4247 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:34:20.4247 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.4247 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:34:20.4247 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:34:20.4247 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:34:20.4247 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:34:20.4247 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:34:20.4391 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:34:20.4391 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:34:20.4391 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:34:20.4391 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:34:20.4391 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:34:20.4391 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:34:20.4391 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:43:25.2637 Info Message Template Auto Format enabled
+2022-05-31 14:43:25.2975 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:43:25.3666 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:43:25.3666 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:43:25.3888 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.3965 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:43:25.3965 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:43:25.3965 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.3965 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:43:25.4071 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.4071 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:43:25.4071 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.4071 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:43:25.4071 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:43:25.4071 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:43:25.4071 Trace ParseRulesElement
+2022-05-31 14:43:25.4414 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:43:25.4414 Debug --- NLog configuration dump ---
+2022-05-31 14:43:25.4414 Debug Targets:
+2022-05-31 14:43:25.4414 Debug FileTarget(Name=logfile)
+2022-05-31 14:43:25.4414 Debug Rules:
+2022-05-31 14:43:25.4414 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:43:25.4414 Debug --- End of NLog configuration dump ---
+2022-05-31 14:43:25.4557 Trace FindReachableObject<System.Object>:
+2022-05-31 14:43:25.4557 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:43:25.4557 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:43:25.4557 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:43:25.4557 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:43:25.4557 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:43:25.4557 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:43:25.4557 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.4557 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:43:25.4557 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.4701 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:43:25.4701 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:43:25.4701 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:43:25.4701 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:43:25.4701 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.4701 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:43:25.4701 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.4701 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:43:25.4701 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:43:25.4701 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:43:25.4701 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:43:25.4701 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:43:25.4701 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:43:25.4862 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:43:25.4862 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:43:25.4862 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:43:25.4862 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:43:25.4862 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:43:25.4862 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:43:25.4862 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:43:25.4862 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.4862 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:43:25.4862 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:43:25.4862 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:43:25.5009 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.5009 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:43:25.5009 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.5009 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:43:25.5009 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:43:25.5009 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:43:25.5009 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:43:25.5009 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:43:25.5009 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:43:25.5009 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:43:25.5009 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:43:25.5009 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.5009 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:43:25.5009 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:43:25.5009 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:43:25.5009 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:43:25.5009 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:43:25.5009 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:43:25.5009 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:43:25.5009 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:43:25.5163 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:43:25.5163 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:43:25.5163 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:43:25.5163 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:44:39.6681 Info Message Template Auto Format enabled
+2022-05-31 14:44:39.7059 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:44:39.7794 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:44:39.7871 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:44:39.7985 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.7985 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:44:39.7985 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:44:39.8140 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.8140 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:44:39.8140 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.8140 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:44:39.8140 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.8140 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:44:39.8140 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:44:39.8140 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:44:39.8291 Trace ParseRulesElement
+2022-05-31 14:44:39.8291 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:44:39.8463 Debug --- NLog configuration dump ---
+2022-05-31 14:44:39.8463 Debug Targets:
+2022-05-31 14:44:39.8463 Debug FileTarget(Name=logfile)
+2022-05-31 14:44:39.8463 Debug Rules:
+2022-05-31 14:44:39.8463 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:44:39.8463 Debug --- End of NLog configuration dump ---
+2022-05-31 14:44:39.8463 Trace FindReachableObject<System.Object>:
+2022-05-31 14:44:39.8619 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:44:39.8619 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:44:39.8619 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:44:39.8619 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:44:39.8619 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:44:39.8619 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:44:39.8619 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.8619 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:44:39.8758 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.8758 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:44:39.8758 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:44:39.8758 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:44:39.8758 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:44:39.8758 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.8758 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:44:39.8758 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.8758 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:44:39.8758 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:44:39.8758 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:44:39.8758 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:44:39.8944 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:44:39.8944 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:44:39.8944 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:44:39.8944 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:44:39.9065 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:44:39.9065 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:44:39.9065 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:44:39.9065 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:44:39.9065 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:44:39.9065 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.9065 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:44:39.9065 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:44:39.9065 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:44:39.9065 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.9225 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:44:39.9225 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.9225 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:44:39.9225 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:44:39.9225 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:44:39.9225 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:44:39.9225 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:44:39.9225 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:44:39.9225 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:44:39.9225 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:44:39.9225 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.9392 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:44:39.9392 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:44:39.9392 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:44:39.9392 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:44:39.9392 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:44:39.9392 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:44:39.9392 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:44:39.9392 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:44:39.9392 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:44:39.9553 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:44:39.9553 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:44:39.9553 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2022-05-31 14:46:05.5920 Info Message Template Auto Format enabled
+2022-05-31 14:46:05.6280 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:46:05.7042 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:46:05.7042 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:46:05.7042 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:05.7274 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:46:05.7274 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:46:05.7353 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:05.7353 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:46:05.7353 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:05.7353 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:46:05.7353 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:05.7353 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:46:05.7353 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:46:05.7353 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:46:05.7353 Trace ParseRulesElement
+2022-05-31 14:46:46.5167 Info Message Template Auto Format enabled
+2022-05-31 14:46:46.5465 Debug ScanAssembly('NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-31 14:46:46.6235 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2022-05-31 14:46:46.6272 Debug Setting 'NLog.Targets.FileTarget.fileName' to '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:46:46.6272 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.6452 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:46:46.6452 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:46:46.6452 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.6452 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:46:46.6580 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.6580 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:46:46.6580 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.6580 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:46:46.6580 Info Adding target FileTarget(Name=logfile)
+2022-05-31 14:46:46.6580 Debug Registered target logfile: NLog.Targets.FileTarget
+2022-05-31 14:46:46.6580 Trace ParseRulesElement
+2022-05-31 14:46:46.6847 Debug Watching file-filter 'nlog.config' in directory: C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2
+2022-05-31 14:46:46.6847 Debug --- NLog configuration dump ---
+2022-05-31 14:46:46.6847 Debug Targets:
+2022-05-31 14:46:46.6893 Debug FileTarget(Name=logfile)
+2022-05-31 14:46:46.6893 Debug Rules:
+2022-05-31 14:46:46.6893 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]
+2022-05-31 14:46:46.6893 Debug --- End of NLog configuration dump ---
+2022-05-31 14:46:46.6893 Trace FindReachableObject<System.Object>:
+2022-05-31 14:46:46.6893 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ logfile ]'
+2022-05-31 14:46:46.7039 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-31 14:46:46.7039 Trace  Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:46:46.7039 Trace   Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:46:46.7039 Trace   Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:46:46.7039 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:46:46.7039 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7039 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:46:46.7039 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7195 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:46:46.7195 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:46:46.7195 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:46:46.7195 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:46:46.7195 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7195 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:46:46.7195 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7195 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:46:46.7195 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:46:46.7195 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-31 14:46:46.7195 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-31 14:46:46.7359 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\edwin\source\repos\HamsterwarsV2\HamsterwarsV2\nlog.config
+2022-05-31 14:46:46.7359 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-31 14:46:46.7359 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-31 14:46:46.7359 Trace Initializing Layout Renderer: ${message}
+2022-05-31 14:46:46.7359 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:46:46.7359 Trace Initializing Layout Renderer: ${level}
+2022-05-31 14:46:46.7359 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:46:46.7517 Trace Initializing Layout Renderer: ${longdate}
+2022-05-31 14:46:46.7517 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2022-05-31 14:46:46.7517 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.7517 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:46:46.7517 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:46:46.7517 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2022-05-31 14:46:46.7517 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7517 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-31 14:46:46.7679 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7679 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-31 14:46:46.7679 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:46:46.7679 Trace Initializing Layout Renderer: ${shortdate}
+2022-05-31 14:46:46.7679 Trace Initializing Layout Renderer: ${literal}
+2022-05-31 14:46:46.7679 Trace Initializing .\logs\${shortdate}_logfile.txt
+2022-05-31 14:46:46.7827 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-31 14:46:46.7827 Trace Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:46:46.7827 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic
+2022-05-31 14:46:46.7827 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7827 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2022-05-31 14:46:46.7993 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-31 14:46:46.7993 Trace Initializing FileTarget(Name=logfile)
+2022-05-31 14:46:46.7993 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-31 14:46:46.7993 Trace Scanning FileTarget 'FileTarget(Name=logfile)'
+2022-05-31 14:46:46.7993 Trace  Scanning Property FileName '.\logs\${shortdate}_logfile.txt' NLog.Layouts
+2022-05-31 14:46:46.7993 Trace  Scanning SimpleLayout '.\logs\${shortdate}_logfile.txt'
+2022-05-31 14:46:46.7993 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts
+2022-05-31 14:46:46.7993 Trace  Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2022-05-31 14:46:46.8141 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2022-05-31 14:46:46.8141 Trace FileTarget(Name=logfile) has 2 layouts
+2022-05-31 14:46:46.8141 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory

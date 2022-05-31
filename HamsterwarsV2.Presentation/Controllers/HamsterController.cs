@@ -15,7 +15,7 @@ namespace HamsterwarsV2.Presentation.Controllers
         public HamsterController(IServiceManager serviceManager) => _service = serviceManager;
 
         [HttpGet]
-        [Authorize(Roles ="User")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> GetHamsters()
         {
             var hamsters = await _service.Hamster.GetAllHamstersAsync( trackChanges: false);

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
 using HamsterwarsV2.Presentation.ActionFilters;
+using Service;
+using Service.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,10 +29,11 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Program));
 
+
 //authentication 
 builder.Services.AddAuthentication();
-builder.Services.ConfigureIdentity();
-builder.Services.ConfigureJWT(builder.Configuration);
+builder.Services.AddScoped<IAutService, AuthService>();
+
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>

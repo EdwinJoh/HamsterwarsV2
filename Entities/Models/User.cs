@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace Entities.Models
 {
-    public class User :IdentityUser
+    public class User 
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int Id { get; set; }
+        public string Email  { get; set; } =string.Empty;
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
+        public DateTime DateCreated { get; set; } = DateTime.Now;
     }
 }

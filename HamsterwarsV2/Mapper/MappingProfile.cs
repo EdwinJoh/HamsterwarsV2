@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
 using Entities.Models;
 using SharedHelpers.DataTransferObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HamsterwarsV2.Mapper
 {
@@ -13,14 +8,14 @@ namespace HamsterwarsV2.Mapper
     {
         public MappingProfile()
         {
-            
+
             CreateMap<Hamster, HamsterDto>();
             CreateMap<HamsterForCreationDto, Hamster>();
             CreateMap<HamsterForUpdateDto, Hamster>().ReverseMap();
             CreateMap<MatchHistoryDto, Matches>();
             CreateMap<MatchForCreationDto, Matches>();
             CreateMap<Matches, MatchDto>();
-            CreateMap<UserForRegistrationDto, User>();
+
 
 
         }

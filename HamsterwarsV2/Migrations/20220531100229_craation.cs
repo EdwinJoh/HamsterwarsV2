@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace HamsterwarsV2.Migrations
 {
-    public partial class seeding : Migration
+    public partial class craation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -42,6 +42,22 @@ namespace HamsterwarsV2.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Matches", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.InsertData(
@@ -96,8 +112,8 @@ namespace HamsterwarsV2.Migrations
                 columns: new[] { "Id", "LoserId", "Timestamp", "WinnerId" },
                 values: new object[,]
                 {
-                    { 1, 2, new DateTime(2022, 5, 28, 17, 52, 58, 553, DateTimeKind.Local).AddTicks(5206), 1 },
-                    { 2, 4, new DateTime(2022, 5, 28, 17, 52, 58, 553, DateTimeKind.Local).AddTicks(5210), 2 }
+                    { 1, 2, new DateTime(2022, 5, 31, 12, 2, 28, 858, DateTimeKind.Local).AddTicks(5652), 1 },
+                    { 2, 4, new DateTime(2022, 5, 31, 12, 2, 28, 858, DateTimeKind.Local).AddTicks(5656), 2 }
                 });
         }
 
@@ -108,6 +124,9 @@ namespace HamsterwarsV2.Migrations
 
             migrationBuilder.DropTable(
                 name: "Matches");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }
