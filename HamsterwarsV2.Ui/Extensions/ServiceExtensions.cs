@@ -1,10 +1,8 @@
-﻿
-using Blazored.LocalStorage;
-using Blazored.Toast;
+﻿using Blazored.LocalStorage;
 using Entities.Models;
 using HamsterwarsV2.Ui.Services;
 using HamsterwarsV2.Ui.Services.AuthService;
-using SharedHelpers.DataTransferObjects;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace HamsterwarsV2.Ui.Extensions
 {
@@ -16,6 +14,9 @@ namespace HamsterwarsV2.Ui.Extensions
             services.AddScoped<IRequestService, RequestService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddBlazoredLocalStorage();
+            services.AddOptions();
+            services.AddAuthorizationCore();
+            services.AddScoped<AuthenticationStateProvider, CustomerAuthStateProvider>();
 
         }
 
