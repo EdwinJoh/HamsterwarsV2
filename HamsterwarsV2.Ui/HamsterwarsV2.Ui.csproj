@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Authentication\**" />
+    <Content Remove="Pages\Authentication\**" />
+    <EmbeddedResource Remove="Pages\Authentication\**" />
+    <None Remove="Pages\Authentication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Components\BattleHamster.razor.css" />
     <None Remove="Components\HamsterCard.razor.css" />
     <None Remove="Pages\Statistic.razor.css" />
@@ -31,10 +38,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Service\Service.csproj" />
     <ProjectReference Include="..\Shared\SharedHelpers.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\Authentication\" />
   </ItemGroup>
 
 </Project>

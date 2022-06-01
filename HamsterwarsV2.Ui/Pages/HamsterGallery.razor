@@ -1,22 +1,28 @@
-﻿
-@inject IRequestService _service
+﻿@inject IRequestService _service
 @inject NavigationManager _nav
 @page "/gallery"
 
 
 
 <h3>HamsterGallery</h3>
-<h4>Our Hamsters</h4>
+<PageTitle>HamsterGallery</PageTitle>
 @if (Hamsters is null)
 {
-   <RadzenCard>
+    <RadzenCard>
         <h4 class="mb-4">Loading</h4>
         <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" />
     </RadzenCard>
 }
 else
 {
-     <button @onclick="@(()=>_nav.NavigateTo("/addHamster"))" type="button" class="btn btn-primary">Add Hamster</button>
+    <AuthorizeView>
+        <Authorized>
+            <button @onclick="@(()=>_nav.NavigateTo("/addHamster"))" type="button" class="btn btn-primary">Add Hamster</button>
+        </Authorized>
+        <NotAuthorized>
+            <button disabled type="button" class="btn btn-primary">Add Hamster</button> login to add hamster..
+        </NotAuthorized>
+    </AuthorizeView>
     <div class="row">
         @foreach (var hamster in Hamsters)
         {
