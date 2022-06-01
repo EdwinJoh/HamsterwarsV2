@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Service.Contracts;
 
-namespace Service.Contracts
+public interface IServiceManager
 {
-    public interface IServiceManager
-    {
-        IHamsterService Hamster { get; }
-        IMatchService Matches { get; }
-
-    }
+    IHamsterService Hamster { get; }
+    IMatchService Matches { get; }
 }

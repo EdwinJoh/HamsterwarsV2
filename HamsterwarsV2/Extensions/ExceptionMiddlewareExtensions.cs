@@ -1,4 +1,4 @@
-﻿using Contacts;
+﻿using Contracts;
 using Entities.ErrorModel;
 using Entities.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Diagnostics;
 
 namespace HamsterwarsV2.Extensions
 {
+    /// <summary>
+    /// Extensions method on top of the webbapplicationType.
+    /// That method adds a middleware to the pipeline that will catch exceptions, and log them.
+    /// </summary>
     public static class ExceptionMiddlewareExtensions
     {
         public static void ConfigureExceptionHandler(this WebApplication app,

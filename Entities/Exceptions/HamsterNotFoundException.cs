@@ -4,34 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Exceptions
+namespace Entities.Exceptions;
+/// <summary>
+/// Here we have out exceptions that we use in our API if something went worng
+/// </summary>
+public class HamsterNotFoundException : NotFoundExceptions
 {
-    public class HamsterNotFoundException : NotFoundExceptions
+    public HamsterNotFoundException(int id) : base($"The Hamster with id: {id} doesn't exsist in the database")
     {
-        public HamsterNotFoundException(int id) : base($"The Hamster with id: {id} doesn't exsist in the database")
-        {
+    }
 
-        }
+}
+
+public class BadRequestException : Exception
+{
+    protected BadRequestException(string message) : base(message)
+    {
+    }
+}
+
+public sealed class IdParametersBadRequestException : BadRequestException
+{
+    public IdParametersBadRequestException() : base("Parameter ids is null")
+    {
+    }
+}
+
+public sealed class CollectionByIdsBadRequestException : BadRequestException
+{
+    public CollectionByIdsBadRequestException() : base("Collection count missmatch compering to ids")
+    {
 
     }
-    public class BadRequestException : Exception
-    {
-        protected BadRequestException(string message) : base(message)
-        {
-        }
-    }
-    public sealed class IdParametersBadRequestException : BadRequestException
-    {
-        public IdParametersBadRequestException() : base("Parameter ids is null")
-        {
-        }
-    }
-    public sealed class CollectionByIdsBadRequestException : BadRequestException
-    {
-        public CollectionByIdsBadRequestException() : base("Collection count missmatch compering to ids")
-        {
-
-        }
-    }
-  
 }

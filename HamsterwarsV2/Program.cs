@@ -1,13 +1,13 @@
 using HamsterwarsV2.Extensions;
 using NLog;
 using Microsoft.AspNetCore.HttpOverrides;
-using Contacts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
 using HamsterwarsV2.Presentation.ActionFilters;
 using Service;
 using Service.Contracts;
+using Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 

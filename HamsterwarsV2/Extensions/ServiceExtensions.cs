@@ -1,5 +1,4 @@
-﻿using Contacts;
-using Contracts;
+﻿using Contracts;
 using Entities.Models;
 using LoggerService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -13,6 +12,9 @@ using System.Text;
 
 namespace HamsterwarsV2.Extensions
 {
+    /// <summary>
+    /// Class that helps us to keep program.cs clean.
+    /// </summary>
     public static class ServiceExtensions
     {
         public static void ConfigureCors(this IServiceCollection services) =>
@@ -20,7 +22,6 @@ namespace HamsterwarsV2.Extensions
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 builder.AllowAnyOrigin()
-                //.WithOrigins("https://localhost:7012", "https://localhost:5000")
                 .AllowAnyMethod()
                .AllowAnyHeader());
             });
@@ -39,6 +40,6 @@ namespace HamsterwarsV2.Extensions
             IConfiguration configuration) =>
                 services.AddDbContext<RepositoryContext>(opts =>
                 opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
-      
+
     }
 }

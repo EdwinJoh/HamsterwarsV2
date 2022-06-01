@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Contracts;
 
-namespace Contracts
+public interface IRepositoryManager
 {
-    public interface IRepositoryManager
-    {
-        IHamsterRepository Hamster { get; }
-        IMatchRepository Matches { get; }
-        Task SaveAsync();
-    }
+    IHamsterRepository Hamster { get; }
+    IMatchRepository Matches { get; }
+    Task SaveAsync();
 }

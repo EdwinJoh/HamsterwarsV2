@@ -1,16 +1,12 @@
 ﻿using SharedHelpers;
 using SharedHelpers.DataTransferObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HamsterwarsV2.Ui.Services.AuthService
+namespace HamsterwarsV2.Ui.Services.AuthService;
+/// <summary>
+/// Interface for our authentication for the client side
+/// </summary>
+public interface IAuthService
 {
-    public interface IAuthService
-    {
-        Task<ServiceResponse<int>> Register(UserRegister request);
-        Task<ServiceResponse<string>> Login(UserLogin request);
-    }
+    Task<ServiceResponse<int>> Register(UserRegister request);
+    Task<ServiceResponse<string>> Login(UserLogin request);
 }

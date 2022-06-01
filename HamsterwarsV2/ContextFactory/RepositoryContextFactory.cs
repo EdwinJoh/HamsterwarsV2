@@ -4,6 +4,9 @@ using Repository;
 
 namespace HamsterwarsV2.ContextFactory
 {
+    /// <summary>
+    /// Class that helps us to do the migration true the Api due to that our repository program isn't the main one
+    /// </summary>
     public class RepositoryContextFactory : IDesignTimeDbContextFactory<RepositoryContext>
     {
         public RepositoryContext CreateDbContext(string[] args)
