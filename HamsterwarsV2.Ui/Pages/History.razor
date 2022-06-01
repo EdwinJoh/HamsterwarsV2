@@ -5,7 +5,7 @@
 @inject NavigationManager _nav
 <h3>History</h3>
 
-@if ( Matches is null)
+@if (Matches is null)
 {
     <RadzenCard>
         <h4 class="mb-4">Loading</h4>
@@ -21,7 +21,7 @@ else
                 <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;">
                     <div class="container">
                         <div class="row">
-                             <img style="width: 10%; height:10%" src="/Content/@matches.Winner.ImgName">
+                            <img style="width: 10%; height:10%" src="/Content/@matches.Winner.ImgName">
                             <div class="col-lg-3 p-3 product-title">
                                 <h5 class="mb-0 ">Winner</h5>
                                 @(matches.Winner.Name)
@@ -30,9 +30,14 @@ else
                                 <h5 class="mb-0 ">Loser</h5>
                                 @(matches.Loser.Name)
                             </div>
-                                 <img style="width: 10%; height:10%" src="/Content/@matches.Loser.ImgName">
+                            <img style="width: 10%; height:10%" src="/Content/@matches.Loser.ImgName">
                             <div class="col-lg-2 p-3 align-content-end">
-                                <button type="button" @onclick="(() => DeleteRow(matches.Id))" class="btn btn-danger">Remove Match</button>
+                                <AuthorizeView>
+                                    <Authorized>
+                                        <button type="button" @onclick="(() => DeleteRow(matches.Id))" class="btn btn-danger">Remove Match</button>
+
+                                    </Authorized>
+                                </AuthorizeView>
                             </div>
                         </div>
                     </div>
