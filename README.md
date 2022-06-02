@@ -8,3 +8,4 @@ Steps when cloning the project:
 3. Open package console and write: update-database and the database will be created with testdata.
 4. Right click on the solution and set startup projects to HamsterwarsV2 ( api) and Hamsterwars.UI.
 5. Start the program and enjoy. :)
+6.Registrera en användare för att använda alla crud funktioner.
