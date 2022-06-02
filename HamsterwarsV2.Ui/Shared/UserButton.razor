@@ -4,7 +4,7 @@
 @inject NavigationManager _nav
 <AuthorizeView>
     <Authorized>
-        Logged in as @context.User.FindFirst(ClaimTypes.Name).Value;
+        Logged in as @context.User.FindFirst(ClaimTypes.Name).Value
 
     </Authorized>
 </AuthorizeView>
