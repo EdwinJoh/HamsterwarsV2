@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamsterwarsV2.Ui", "HamsterwarsV2.Ui\HamsterwarsV2.Ui.csproj", "{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{488F67FB-DCF3-4752-8CB7-FE2E7CE66784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamsterWarsTesting", "HamsterWarsTesting\HamsterWarsTesting.csproj", "{669C6663-13AE-4725-B9EA-3AF4DF990273}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669C6663-13AE-4725-B9EA-3AF4DF990273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669C6663-13AE-4725-B9EA-3AF4DF990273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669C6663-13AE-4725-B9EA-3AF4DF990273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669C6663-13AE-4725-B9EA-3AF4DF990273}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +102,7 @@ Global
 		{32ACCA15-C32D-4C1E-96E4-A52BBFB62ECB} = {66D65B59-E84E-4BEB-8AAF-123878B9C2CC}
 		{12061BDD-C662-45C6-B7EE-56BDAFD10C70} = {8B92F9C2-91E5-4DE1-849A-B5845A4033E6}
 		{9AAF62EB-FD5E-48F0-B107-725D2304C9A1} = {800508C2-8936-4A64-A361-B8511244C1E2}
+		{669C6663-13AE-4725-B9EA-3AF4DF990273} = {488F67FB-DCF3-4752-8CB7-FE2E7CE66784}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8CB85546-2A34-4C69-AB3E-421954BF693D}
